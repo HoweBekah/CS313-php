@@ -11,9 +11,10 @@ There's not really anything to function yet. The page loads though. No special i
 All are working.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-I learned that my text editor will push to Heroku and GitHub, I just have to choose which one it pushes to.
+I learned that my text editor will push to Heroku and GitHub, I just have to choose
+ which one it pushes to and then do the same for whichever I didn't choose first.
 
-6. Please select the category you feel best describes your assignment: [1-5]
+6. Please select the category you feel best describes your assignment: 5
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -22,3 +23,6 @@ I learned that my text editor will push to Heroku and GitHub, I just have to cho
 
 
 7. Provide a brief justification (1-2 sentences) for selecting that category.
+Instead of leaving a blank page I added a heading, picture, and some CSS. 
+It also took me forever to figure out which command line interface I needed to use,
+ so this assignment took me a little longer than anticipated. 
