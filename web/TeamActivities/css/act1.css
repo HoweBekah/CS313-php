@@ -1,0 +1,45 @@
+html {
+  text-align: center;
+  background-color: darkgoldenrod;
+}
+body {
+  width: 75%;
+  margin: 0 auto;
+}
+.buttondivs {
+  background-color: cadetblue;
+  align-items: center;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: inline-block;
+}
+.buttondivs button {
+  font-size: 1.5em;
+  font-family: cursive;
+  font-weight: lighter;
+  padding: 0.5em;
+  margin: 1em;
+  background-color: darkolivegreen;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.buttondivs button:hover {
+  font-weight: bolder;
+}
+#pickColor {
+  margin-top: 2em;
+}
+#colorButton {
+  font-size: 2em;
+  margin: 1em;
+  font-weight: normal;
+  background-color: black;
+  color: white;
+}
+#colorButton:hover {
+  box-shadow: 0.25em 0.25em 1em black;
+  background-color: white;
+  color: black;
+}
