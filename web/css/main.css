@@ -34,15 +34,23 @@ ul li {
   color: #ffffff;
 }
 
-#assignmentnames li a:hover {
-  background-color: #ffffff;
-  color: #8c041b;
-  padding: 0.15em;
-}
-
 li a:hover {
   background-color: #8c041b;
   color: #ffffff;
+  padding: 0.15em;
+}
+nav ul {
+  display: inline;
+  list-style-type: none;
+}
+
+nav li a {
+  color: #ffffff;
+}
+
+nav li a:hover {
+  background-color: #ffffff;
+  color: #8c041b;
   padding: 0.15em;
 }
 
