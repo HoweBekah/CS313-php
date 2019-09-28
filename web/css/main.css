@@ -17,7 +17,8 @@ h1 {
   padding: 0.2em, auto;
   font-size: 4em;
   color: #b6face;
-  border-bottom: 0.25em solid #b6face;
+  border-bottom: 0.1em solid #b6face;
+  margin-bottom: 0.2em;
 }
 
 h2 {
