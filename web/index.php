@@ -16,7 +16,8 @@
     <main>
       <h2>My Favorites</h2>
       <h3>In no particular order but Jesus is always #1</h3>
-        <ul id="favs">
+      <div id="favs">
+        <ul>
             <li>Jesus Christ</li>
             <li>Jett (my dog)</li>
             <li>Movies</li>
@@ -29,7 +30,7 @@
             <li>My Little 3 Toed Foot</li>
             <li>My Green Eyes</li>
         </ul>
-
+        </div>
     </main>
     <footer>
       <?php include('footer.php') ?>
