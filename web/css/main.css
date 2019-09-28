@@ -36,13 +36,15 @@ ul li {
   padding: 0.15em;
 }
 
-#assignmentnames {
+#favs {
   background-color: #8c041b;
   color: #ffffff;
-  padding: 0.5em;
+  padding: 1em;
   border-radius: 20px;
+  display: inline;
 }
 
+#favs li a,
 #assignmentnames li a {
   color: #ffffff;
 }
@@ -61,8 +63,8 @@ nav li {
   display: inline;
   border: 0.1em solid #b6face;
   border-radius: 10px;
-  padding: 0.2em;
-  font-size: 1em;
+  padding: 0.5em;
+  font-size: 1.5em;
   margin-left: 0.15em;
 }
 nav li a {

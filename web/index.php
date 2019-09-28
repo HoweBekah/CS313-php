@@ -16,7 +16,7 @@
     <main>
       <h2>My Favorites</h2>
       <h3>In no particular order but Jesus is always #1</h3>
-        <ul id="assignmentnames">
+        <ul id="favs">
             <li>Jesus Christ</li>
             <li>Jett (my dog)</li>
             <li>Movies</li>
