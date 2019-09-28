@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-  padding: 1em;
+  padding: 0.2em, auto;
   font-size: 4em;
   color: #b6face;
 }
@@ -23,7 +23,6 @@ h2 {
   font-size: 2em;
   text-align: left;
   padding: 0.5em;
-  padding-bottom: 1em;
   border-bottom: 0.25em solid #b6face;
 }
 
@@ -56,6 +55,8 @@ footer a {
 }
 
 header img {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
   float: right;
   border: 0.5em solid #ffffff;
 }
