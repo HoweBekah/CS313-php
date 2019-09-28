@@ -15,7 +15,7 @@
     </header>
     <main>
       <h2>My Favorites</h2>
-      <h3>In no particular order but Jesus is always #1</h3>
+      <h3>In no particular order, but Jesus is always #1!</h3>
       <div id="favs">
         <ul>
             <li>Jesus Christ</li>
