@@ -30,9 +30,16 @@ h2 {
 ul li {
   padding: 0.15em;
 }
-ul li a {
-  color: #8c041b;
+#assignmentnames li a {
+  color: #ffffff;
 }
+
+#assignmentnames li a:hover {
+  background-color: #ffffff;
+  color: #8c041b;
+  padding: 0.15em;
+}
+
 li a:hover {
   background-color: #8c041b;
   color: #ffffff;

@@ -11,6 +11,7 @@
 <header>
         <img src="images/webMeandJett.jpg" alt="My profile picture">
         <h1>Bekah Howe</h1>
+        <?php include('nav.php') ?>
     </header>
     <main>
       
