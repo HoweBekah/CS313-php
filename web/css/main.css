@@ -29,6 +29,8 @@ h2 {
 
 ul li {
   padding: 0.15em;
+}
+ul li a {
   color: #8c041b;
 }
 li a:hover {
