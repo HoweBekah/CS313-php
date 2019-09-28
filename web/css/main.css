@@ -45,14 +45,15 @@ ul li {
   margin: 0.75em;
 }
 
-#favs li a,
-#assignmentnames li a {
+#favs li a {
   color: #ffffff;
 }
-
-li a:hover {
-  background-color: #ffffff;
+#assignmentnames li a {
   color: #8c041b;
+}
+#assignmentnames li a:hover {
+  background-color: #8c041b;
+  color: #ffffff;
   padding: 0.15em;
 }
 
