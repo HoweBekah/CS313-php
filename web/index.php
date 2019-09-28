@@ -26,7 +26,7 @@
 
     </main>
     <footer>
-      <?php include $_SERVER['DOCUMENT_ROOT'] . 'Users/bekah/CS313-php/web/common/footer.php'; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/web/common/footer.php'; ?>
     </footer>
 </body>
 </html>
