@@ -79,7 +79,9 @@ nav li {
 nav li a {
   color: #ffffff;
 }
-
+nav li a:hover {
+  color: #ffffff;
+}
 nav li:hover {
   background-color: #ffffff;
   color: #8c041b;
