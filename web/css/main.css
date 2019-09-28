@@ -25,11 +25,12 @@ h2 {
   display: inline-block;
   font-size: 2em;
   text-align: left;
-  padding-top: 0.5em;
-  border-bottom: 0.2em solid #8c041b;
+  padding: 0.5em, auto;
+  border-bottom: 0.1em solid #8c041b;
 }
 h3 {
-  font-size: 0.5em;
+  margin-top: 0.5em;
+  font-size: 1em;
 }
 ul li {
   padding: 0.15em;
@@ -43,13 +44,14 @@ li a:hover {
   color: #ffffff;
   padding: 0.15em;
 }
-nav {
-  display: inline;
-}
+
 nav ul {
   list-style-type: none;
 }
 
+nav li {
+  display: inline;
+}
 nav li a {
   color: #ffffff;
 }
