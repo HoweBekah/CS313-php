@@ -6,8 +6,9 @@
 body {
   font-size: 16px;
   line-height: 32px;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Bree Serif", serif;
   font-weight: bold;
+  background-color: #b6face;
 }
 
 a {
@@ -18,7 +19,7 @@ h1 {
   padding: 1rem;
   padding-left: 0rem;
   font-size: 4em;
-  color: rgb(98, 114, 255);
+  color: #b6face;
 }
 
 h2 {
@@ -26,22 +27,11 @@ h2 {
   text-align: left;
   padding: 0.5rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgb(98, 114, 255);
-}
-
-#webapp {
-  font-size: 2em;
-  text-align: left;
-  padding: 1rem;
-  border-bottom: none;
+  border-bottom: 2px solid #b6face;
 }
 
 li a:hover {
   background-color: antiquewhite;
-}
-
-footer a:hover {
-  background-color: rgb(98, 114, 255);
 }
 
 main {
@@ -62,7 +52,7 @@ header,
 footer,
 footer a {
   text-align: left;
-  background-color: rgb(177, 15, 15);
+  background-color: #8c041b;
   color: whitesmoke;
 }
 
