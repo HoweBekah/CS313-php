@@ -15,8 +15,6 @@
 <header>
         <img src="images/webMeandJett.jpg" alt="My profile picture">
         <h1>Bekah Howe</h1>
-        <h2>CS 313 Homepage</h2>
-
     </header>
     <main>
       
