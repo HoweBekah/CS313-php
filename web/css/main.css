@@ -86,6 +86,7 @@ nav li:hover {
 }
 
 main {
+  border: 0.2em dashed #8c041b;
   font-size: 1.5em;
   background-color: #ffffff;
   color: #8c041b;
