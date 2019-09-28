@@ -30,6 +30,7 @@ h2 {
 li a:hover {
   background-color: #8c041b;
   color: #ffffff;
+  padding: 0.2em;
 }
 
 main {
