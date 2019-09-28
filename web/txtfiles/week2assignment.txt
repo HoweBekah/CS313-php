@@ -1,23 +1,25 @@
 After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application:
-
+https://calm-savannah-95519.herokuapp.com/index.php
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+https://github.com/HoweBekah/CS313-php/tree/master/web
 
 3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
-
+Hover over assignment names and nav links to change colors on both individually.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+I think everything is working properly so far.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+Last time I used php I had to use xxamp to be able to deploy my code so I really enjoy just running it straight to heroku.
+It's so much faster to see what my changes have done.
 
 6. What is the difference between an HTTP Get and Post? When should each be used?
+HTTP get retrieves information from a server and post adds/updates information on a server.
 
-
-7. Please select the category you feel best describes your assignment:
+7. Please select the category you feel best describes your assignment: 5
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -26,4 +28,4 @@ After completing the assignment, please answer the questions in this text file a
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
-
+I feel I did more than just meet the requirements for this assignment because I added a little more php elements and dynamic elements.
