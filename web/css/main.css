@@ -4,8 +4,6 @@
 }
 
 body {
-  font-size: 16px;
-  line-height: 32px;
   font-family: "Bree Serif", serif;
   font-weight: bold;
   background-color: #b6face;
@@ -16,8 +14,7 @@ a {
 }
 
 h1 {
-  padding: 1rem;
-  padding-left: 0rem;
+  padding: 1em;
   font-size: 4em;
   color: #b6face;
 }
@@ -25,42 +22,42 @@ h1 {
 h2 {
   font-size: 2em;
   text-align: left;
-  padding: 0.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #b6face;
+  padding: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 0.25em solid #b6face;
 }
 
 li a:hover {
-  background-color: antiquewhite;
+  background-color: #8c041b;
+  color: #ffffff;
 }
 
 main {
-  font-size: 1.5rem;
-  background-color: lightpink;
-  color: rgb(97, 42, 3);
+  font-size: 1.5em;
+  background-color: #ffffff;
+  color: #8c041b;
 }
 
 header,
 main,
 footer {
-  margin: 1.25rem auto;
-  padding: 0.5rem;
+  margin: 1.25em auto;
+  padding: 0.5em;
   max-width: 80%;
 }
 
 header,
 footer,
 footer a {
+  padding-left: 1em;
   text-align: left;
   background-color: #8c041b;
-  color: whitesmoke;
+  color: #ffffff;
 }
 
 header img {
-  width: 250px;
-  height: auto;
   float: right;
-  border: 3px solid whitesmoke;
+  border: 0.5em solid #ffffff;
 }
 
 footer {
