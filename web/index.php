@@ -26,7 +26,7 @@
 
     </main>
     <footer>
-      <?php include('../common/footer.php') ?>
+      <?php include('footer.php') ?>
     </footer>
 </body>
 </html>
