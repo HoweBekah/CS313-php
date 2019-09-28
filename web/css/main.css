@@ -58,9 +58,6 @@ li a:hover {
 
 nav ul {
   list-style-type: none;
-  margin: 1em;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 nav li {
@@ -69,8 +66,9 @@ nav li {
   border-radius: 10px;
   padding: 0.5em;
   font-size: 1.5em;
-
-  margin-left: 0.15em;
+  margin: 0.5em;
+  margin-left: auto;
+  margin-right: 0.15em;
 }
 nav li a {
   color: #ffffff;
