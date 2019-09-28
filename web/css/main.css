@@ -25,7 +25,7 @@ h2 {
   display: inline-block;
   font-size: 2em;
   text-align: left;
-  padding: 0.5em, auto;
+  padding: 0.75em, auto;
   border-bottom: 0.1em solid #8c041b;
 }
 h3 {
@@ -35,13 +35,21 @@ h3 {
 ul li {
   padding: 0.15em;
 }
+
+#assignmentnames {
+  background-color: #8c041b;
+  color: #ffffff;
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
 #assignmentnames li a {
   color: #ffffff;
 }
 
 li a:hover {
-  background-color: #8c041b;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #8c041b;
   padding: 0.15em;
 }
 
@@ -51,6 +59,11 @@ nav ul {
 
 nav li {
   display: inline;
+  border: 0.1em solid #b6face;
+  border-radius: 10px;
+  padding: 0.2em;
+  font-size: 1em;
+  margin-left: 0.15em;
 }
 nav li a {
   color: #ffffff;
