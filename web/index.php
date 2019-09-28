@@ -26,9 +26,7 @@
 
     </main>
     <footer>
-        <p>
-            &copy;2019 | Bekah Howe
-        </p>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/CS313-php/web/common/footer.php'; ?>
     </footer>
 </body>
 </html>
