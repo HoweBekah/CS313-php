@@ -19,7 +19,12 @@ header {
 }
 #header {
   display: flex;
+  width: 60%;
+  margin: 0 auto;
 }
 #logo {
   float: left;
+}
+#header h1 {
+  vertical-align: bottom;
 }
