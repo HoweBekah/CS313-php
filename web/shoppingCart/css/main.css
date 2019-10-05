@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: antiquewhite;
+  background-color: white;
 }
 body {
   background-color: gray;
@@ -18,5 +18,8 @@ header {
   color: #2e82c2;
 }
 #header {
-  display: inline;
+  display: flex;
+}
+#logo {
+  float: left;
 }
