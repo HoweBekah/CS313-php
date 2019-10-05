@@ -10,6 +10,7 @@ body {
   background-color: gray;
   margin: 0 auto;
   width: 80%;
+  height: 100vh;
 }
 
 header {
