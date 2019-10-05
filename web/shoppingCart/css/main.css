@@ -10,7 +10,7 @@ body {
   background-color: gray;
   margin: 0 auto;
   width: 80%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 main {
@@ -31,7 +31,6 @@ header {
   float: left;
 }
 #header h1 {
-  vertical-align: bottom;
   position: absolute;
 }
 #shirtDiv {
@@ -55,5 +54,13 @@ header {
 
 main section img {
   width: 200px;
-  height: auto;
+  height: 200px;
+}
+main section {
+  display: block;
+  background-color: #2e82c2;
+  border-radius: 20px;
+  color: white;
+  padding: 0.25em;
+  margin: 0.25em;
 }
