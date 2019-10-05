@@ -8,7 +8,7 @@
 </head>
 <body>
    <header>
-   <img src="/images/BerkshireTeeFarmsLogo.jpg">
+   <img src="images/BerkshireTeeFarmsLogo.jpg">
    </header> 
 </body>
 </html>
