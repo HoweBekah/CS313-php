@@ -25,7 +25,7 @@
    <input type="button" value="Add to Cart" id="addCart">
    </section>
    <section>
-   <h3>Cupcake Looking for Stud Muffin</h3>
+   <h3>Cupcake Looking for a Stud</h3>
    <img src="images/cupcake.jpg" alt="Just a cupcake looking for a stud muffin shirt">
    <input type="button" value="Add to Cart" id="addCart">
    </section>
