@@ -7,6 +7,10 @@
     <title>View Cart</title>
 </head>
 <body>
-    
+<header>
+    <?php include('header.php') ?>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>

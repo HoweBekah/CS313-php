@@ -7,6 +7,10 @@
     <title>Purchase Confirmation</title>
 </head>
 <body>
-    
+<header>
+    <?php include('header.php') ?>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>

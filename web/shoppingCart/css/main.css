@@ -11,8 +11,11 @@ body {
   margin: 0 auto;
   width: 80%;
   height: 100vh;
+  text-align: center;
 }
-
+main {
+  width: 80%;
+}
 header {
   background-color: #94d788;
   color: #2e82c2;
@@ -21,10 +24,30 @@ header {
   display: flex;
   width: 60%;
   margin: 0 auto;
+  position: relative;
 }
 #logo {
   float: left;
 }
 #header h1 {
   vertical-align: bottom;
+  position: absolute;
+}
+#shirtDiv {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#onesieDiv {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#shirtTitle {
+  grid-column: span 3;
+}
+#onesieTitle {
+  grid-column: span 2;
 }

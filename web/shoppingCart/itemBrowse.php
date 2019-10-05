@@ -9,15 +9,11 @@
 </head>
 <body>
    <header>
-    <div id="header">
-   <img src="images/BerkshireTeeFarmsLogo.jpg" alt="Logo for Berkshire Tee Farms" id="logo">
-   <div id="title">
-   <h1>Berkshire Tee Farms</h1>
-   </div></div>
+  <?php include('header.php') ?>
    </header>
    <main>
    <div id="shirtDiv">
-   <h2>Shirts</h2>
+   <h2 id="shirtTitle">Shirts</h2>
    <section>
    <h3></h3>
    <img>
@@ -49,7 +45,7 @@
    </section>
 </div>
 <div id="onesieDiv">
-   <h2>Onesies</h2>
+   <h2  id="shirtTitle">Onesies</h2>
    <section>
    <h3></h3>
    <img>
