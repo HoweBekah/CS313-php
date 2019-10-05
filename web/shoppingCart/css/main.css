@@ -36,14 +36,14 @@ header {
 #shirtDiv {
   display: grid;
   grid-template-rows: 0.5fr 3fr 3fr;
-  grid-template-columns: repeat(2, 304.6px);
+  grid-template-columns: repeat(2, 325px);
   margin: 1.5em auto;
 }
 
 #onesieDiv {
   display: grid;
   grid-template-rows: 0.5fr 3fr 3fr;
-  grid-template-columns: repeat(2, 304.6px);
+  grid-template-columns: repeat(2, 325px);
   margin: 0 auto;
 }
 
