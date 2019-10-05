@@ -15,6 +15,7 @@ body {
 }
 main {
   width: 80%;
+  margin: 0 auto;
 }
 header {
   background-color: #94d788;
@@ -50,4 +51,9 @@ header {
 }
 #onesieTitle {
   grid-column: span 2;
+}
+
+main section img {
+  width: 200px;
+  height: auto;
 }
