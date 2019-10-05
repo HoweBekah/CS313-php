@@ -3,8 +3,9 @@
   box-sizing: border-box;
 }
 
-/*blue in logo: 2e82c2
-green in logo: 94d788*/
+html {
+  background-color: antiquewhite;
+}
 body {
   background-color: gray;
   margin: 0 auto;
@@ -14,5 +15,7 @@ body {
 header {
   background-color: #94d788;
   color: #2e82c2;
+}
+#header {
   display: inline;
 }
