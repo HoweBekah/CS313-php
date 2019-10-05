@@ -16,7 +16,7 @@
     <main>
       
         <ul id="assignmentnames">
-            <li>Assignment 1: <a href="#">??</a></li>
+            <li>Assignment 1: <a href="/web/shoppingCart/index.php">Shopping Cart</a></li>
             <li>Assignment 2: <a href="#">???</a></li>
             <li>Assignment 3: <a href="#">????</a></li>
         </ul>
