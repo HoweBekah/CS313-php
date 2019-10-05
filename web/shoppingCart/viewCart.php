@@ -10,7 +10,15 @@
 <header>
     <?php include('header.php') ?>
     </header>
-    <main></main>
+    <main>
+        <div id="cartItems">
+
+        </div>
+        <div id="cartBtns">
+        <input type="button" value="Continue Shopping" class="cartBtns" onclick="location.href='itemBrowse.php';">
+        <input type="button" value="Checkout" class="cartBtns" onclick="location.href='checkout.php';">
+        </div>
+    </main>
     <footer></footer>
 </body>
 </html>

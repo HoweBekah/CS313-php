@@ -49,9 +49,13 @@ header {
 
 #shirtTitle {
   grid-column: span 2;
+  background-color: #94d788;
+  border-radius: 10px;
 }
 #onesieTitle {
   grid-column: span 2;
+  background-color: #94d788;
+  border-radius: 10px;
 }
 
 main section img {
