@@ -45,7 +45,7 @@
    </section>
 </div>
 <div id="onesieDiv">
-   <h2  id="shirtTitle">Onesies</h2>
+   <h2  id="onesieTitle">Onesies</h2>
    <section>
    <h3></h3>
    <img>
@@ -56,7 +56,7 @@
    <img>
    <input type="button" value="Add to Cart" id="addCart">
    </section>
-   <section>
+   <section id="newRow">
    <h3></h3>
    <img>
    <input type="button" value="Add to Cart" id="addCart">
