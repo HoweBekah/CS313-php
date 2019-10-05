@@ -36,7 +36,7 @@ header {
 #shirtDiv {
   display: grid;
   grid-template-rows: 0.5fr 3fr 3fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 304.6px);
   margin: 1.5em auto;
 }
 
@@ -44,7 +44,7 @@ header {
   display: grid;
   grid-template-rows: 0.5fr 3fr 3fr;
   grid-template-columns: repeat(2, 304.6px);
-  margin: auto;
+  margin: 0 auto;
 }
 
 #shirtTitle {
@@ -59,6 +59,7 @@ main section img {
   height: 200px;
   margin: 0.25em;
 }
+
 main section {
   display: block;
   background-color: #2e82c2;
