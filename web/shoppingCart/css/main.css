@@ -8,9 +8,11 @@ green in logo: 94d788*/
 body {
   background-color: gray;
   margin: 0 auto;
+  width: 80%;
 }
 
 header {
   background-color: #94d788;
   color: #2e82c2;
+  display: inline;
 }
