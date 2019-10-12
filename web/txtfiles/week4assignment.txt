@@ -1,21 +1,24 @@
 After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
 
 1. Provide a link to your myDb.sql file at GitHub (the file that contains all the SQL commands needed to create your database).
-
+    https://github.com/HoweBekah/CS313-php/tree/master/db
 
 2. Describe something from your database that you think came together very nicely.
-
+    One thing that came together really well was inserting the category names into the category table.
 
 3. Describe something from your database that you think could be improved or extended in the future.
-
+    I think I could add more columns to the category table. The recipes table could use some work. 
+    I want to add a column (or new table?) to store the amount of each ingredient is needed for each recipe.
 
 4. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+    I think the coolest thing I learned was how to change the environment variables on my computer. 
+    I didn't know you can do that and I'm sure it will be handy to know in the future.
 
 5. Briefly describe two principles of good database design.
+    1. Connect tables as much as possible so you don't have to rewrite code.
+    2. Find, organize, and divide information into tables before you start coding anything.
 
-
-6. Please select the category you feel best describes your assignment:
+6. Please select the category you feel best describes your assignment: 4
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -24,3 +27,4 @@ After completing the assignment, please answer the questions in this text file a
 
 
 7. Provide a brief justification (1-2 sentences) for selecting that category.
+I have all of the necessary requirements and I worked long and hard to create and connect to the Postgre database.
