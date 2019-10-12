@@ -4,20 +4,21 @@ After completing the assignment, please answer the questions in this text file a
 https://calm-savannah-95519.herokuapp.com/shoppingCart/itemBrowse.php
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+https://github.com/HoweBekah/CS313-php/tree/master/web/shoppingCart
 
 3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
-
+The links to the different pages work and that's about it.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+Basically all of the things aren't working. I couldn't figure out how to store my variables without having a database. I'm currently trying to figure out the session variable thing that has been talked about on Slack.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+With what I was able to actually do, I'd say the coolest thing was using grid to arrange the items in my shop. I had never used it in 2 spots before so that was cool to see.
 6. List one strength and one limitation of using cookies.
+Strength- stores a variable is needed.
+Limitation- Sometimes the cookie doesn't stay current and holds a past variable.
 
-
-7. Please select the category you feel best describes your assignment:
+7. Please select the category you feel best describes your assignment: 2
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -26,3 +27,4 @@ https://calm-savannah-95519.herokuapp.com/shoppingCart/itemBrowse.php
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I really struggled this week with getting the logic figured out on all of my pages but I at least created all pages and have alot of the other elements that are needed. I tried my best. 
