@@ -34,8 +34,8 @@ catch (PDOException $ex) {
 <body>
     <h1>Beverages</h1>
     <?php
-    foreach ($db->query("SELECT * FROM recipes WHERE category = 'Beverage'") as $row) {
-     echo $row['recipe_name'] ;
+    foreach ($db->query("SELECT * FROM recipes) as $row) {
+     echo $row[recipe_name] ;
        }
     ?>
 </body>
