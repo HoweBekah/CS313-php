@@ -35,7 +35,7 @@ session_start();
     <h1>Beverages</h1>
     <?php
     foreach ($db->query('SELECT * FROM recipes') as $row) {
-     echo "<h2>" . $row['recipes']['recipe_name'] . "</h2>";
+     echo "<h2>" . $row['recipe_name'] . "</h2>";
        }
     ?>
 </body>
