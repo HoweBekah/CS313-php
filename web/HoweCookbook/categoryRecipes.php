@@ -22,6 +22,7 @@ catch (PDOException $ex) {
 }
 
 session_start();
+$categoryName = $db->query("SELECT * FROM category WHERE category.id =" . $_GET['id']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,14 +30,13 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | Howe Cookbook</title>
+    <title><?php echo $categoryName; ?> Recipes</title>
 </head>
 <body>
-    <h1>Beverages</h1>
+    <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
-    foreach ($db->query('SELECT * FROM category') as $row) {
-        $url = "categoryRecipes.php?" ."id=" . $row['id'];
-     echo "<a href='$url' class='categorybtns'>" . $row['category'] . "</a>";
+    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . $categoryName) as $row) {
+     echo "<h3>" . $row['recipe_name'] . "</h3>";
        }
     ?>
 </body>
