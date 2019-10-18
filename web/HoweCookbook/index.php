@@ -33,7 +33,7 @@ session_start();
     <title>Home | Howe Cookbook</title>
 </head>
 <body>
-    <h1>Beverages</h1>
+    <h1>Howe Family Cookbook</h1>
     <?php
     foreach ($db->query('SELECT * FROM category') as $row) {
         $url = "categoryRecipes.php?" ."id=" . $row['catid'];
