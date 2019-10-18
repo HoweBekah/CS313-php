@@ -35,7 +35,7 @@ $categoryName = $db->query("SELECT * FROM category WHERE category.id =" . $_GET[
 <body>
     <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
-    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . $categoryName) as $row) {
+    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName. "'") as $row) {
      echo "<h3>" . $row['recipe_name'] . "</h3>";
        }
     ?>

@@ -41,10 +41,6 @@ session_start();
        }
 
     ?>
-     <?php
-    foreach ($db->query("SELECT * FROM recipes WHERE category = 'Beverages'") as $row) {
-     echo "<h3>" . $row['recipe_name'] . "</h3>";
-       }
-    ?>
+    
 </body>
 </html>
