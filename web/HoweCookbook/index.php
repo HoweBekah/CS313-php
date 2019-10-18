@@ -29,13 +29,14 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/main.css" />
     <title>Home | Howe Cookbook</title>
 </head>
 <body>
     <h1>Beverages</h1>
     <?php
     foreach ($db->query('SELECT * FROM category') as $row) {
-        $url = "categoryRecipes.php?" ."id=" . $row['id'];
+        $url = "categoryRecipes.php?" ."id=" . $row['catid'];
      echo "<a href='$url' class='categorybtns'>" . $row['category'] . "</a>";
        }
     ?>
