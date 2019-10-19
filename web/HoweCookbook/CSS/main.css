@@ -17,17 +17,16 @@ header img {
 }
 
 #mainBTNdiv {
-  width: 35%;
+  width: 45%;
   margin: auto;
 }
 
 .categorybtns {
   color: #a31621;
-  font-size: 3em;
+  font-size: 2em;
   padding: 1em;
-  margin: 1.5em;
+  margin: 1em;
   background-color: #fcf7f8;
   text-decoration: none;
   font-weight: bolder;
-  display: block;
 }
