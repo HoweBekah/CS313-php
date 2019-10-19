@@ -23,7 +23,7 @@ header img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 4em);
-  column-gap: 1em;
+  column-gap: 0.5em;
   row-gap: 1em;
 }
 
@@ -31,7 +31,7 @@ header img {
   color: #a31621;
   font-size: 2em;
   padding: 1em;
-  margin: 1em;
+
   background-color: #fcf7f8;
   text-decoration: none;
   font-weight: bolder;
