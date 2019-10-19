@@ -22,6 +22,7 @@ catch (PDOException $ex) {
 }
 session_start();
 $query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['recipeid'];
+echo $query;
 $stmt = $db->prepare($query);
 $stmt->execute(); 
  $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -45,7 +46,7 @@ $stmt->execute();
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
    <ul>
    <?php
-    foreach ($db->query('SELECT ingredients FROM recipes WHERE recipe_name = ' . "'" . $recipeInfo['recipe_name'] . "'") as $row) {
+    foreach ($recipeInfo['recipe_ingredients'] as $row) {
      echo "<li>" . $row['ingredients'] . "</li>";
        }
     ?>
