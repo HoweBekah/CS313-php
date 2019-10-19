@@ -25,7 +25,7 @@ session_start();
 $query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
- $categoryName = $stmt->fetchAll(PDO::FETCH_ASSOC);
+ $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
 
 ?>
 <!DOCTYPE html>
