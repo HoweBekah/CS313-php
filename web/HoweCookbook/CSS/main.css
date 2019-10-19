@@ -3,7 +3,7 @@
   text-align: center;
   padding: 0;
 }
-/*#4e8098*/
+/*#90C2E7*/
 body {
   background-color: #a31621;
   color: #ced3dc;
@@ -16,6 +16,7 @@ body {
 
 header img {
   margin: auto;
+  width: 100%;
 }
 
 #howeHeader {
@@ -28,7 +29,9 @@ header img {
   margin-top: 0.5em;
   border-radius: 15px;
 }
-
+main {
+  margin: auto;
+}
 #mainBTNdiv {
   width: 80%;
   margin: auto;
@@ -37,7 +40,6 @@ header img {
   grid-template-rows: repeat(3, 1fr);
   column-gap: 1.5em;
   row-gap: 1.5em;
-  margin: 2em;
 }
 
 .categorybtns {
@@ -51,4 +53,5 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0.5em, 0.5em, 0.5em #4e8098;
 }
