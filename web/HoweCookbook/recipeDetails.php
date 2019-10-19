@@ -26,10 +26,10 @@ $stmt = $db->prepare($query);
 $stmt->execute(); 
  $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 
- $query = 'SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid'];
+/* $query = 'SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
- $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
+ $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,13 +49,14 @@ $stmt->execute();
 <main>
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
    <h2>Ingredients:</h2>
-   <ul id="ingred">
+   <p id="ingred">
    <?php
-   foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
+   /*foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
   
- echo "<li>" . $row['ingredient'] . "</li>";}
+ echo "<li>" . $row['ingredient'] . "</li>";}*/
+ echo $recipeInfo['ingredients']; 
     ?>
-</ul>
+</p>
 
 <h2>Instructions:</h2>
 <p id="instruct">
