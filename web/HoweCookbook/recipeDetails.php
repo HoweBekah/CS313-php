@@ -64,7 +64,7 @@ $stmt->execute();
 </p>
 <input class="addUpdate" type="button" value="Update Recipe">
 <?php   $url = "recipeDetails.php?" ."recipeid=" . $row['category'];
-"<a href='$url' class='addUpdate'>Back to Category</a>"?>
+echo "<a href='$url' class='addUpdate'>Back to Category</a>"?>
     </main>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
