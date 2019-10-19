@@ -49,14 +49,14 @@ $stmt->execute();
 <main>
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
    <h2>Ingredients:</h2>
-   <p id="ingred">
+   <ul id="ingred">
    <?php
-   /*foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
+   foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe ='. $_GET['recipeid']) as $row) {
   
- echo "<li>" . $row['ingredient'] . "</li>";}*/
- echo $recipeInfo['ingredients']; 
+ echo "<li>" . $row['ingredient'] . "</li>";}
+ /*echo $recipeInfo['ingredients']; */
     ?>
-</p>
+</ul>
 
 <h2>Instructions:</h2>
 <p id="instruct">
