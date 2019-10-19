@@ -174,3 +174,33 @@ VALUES
   (DEFAULT, 2, '1/2 - 12 oz can lemonade concentrate')
    ,
   (DEFAULT, 2, '1 pkg. orange kool-aid');
+
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 1, '1-2 liter bottle ginger ale')
+  ,
+  (DEFAULT, 1, '1-64 oz bottle Cranberry juice cocktail (any variety, Grandma uses cran-raspberry)')
+  ,
+  (DEFAULT, 3, '1-2 liter bottle lemon-lime soda')
+  ,
+  (DEFAULT, 3, '1 - 64 oz. bottle white grape juice')
+  ,
+  (DEFAULT, 9, '2 cups milk chocolate chips')
+  ,
+  (DEFAULT, 9, '1/2 - 12 oz. can orange juice concentrate')
+  ,
+  (DEFAULT, 9, '1/2 - 12 oz. can lemonade concentrate')
+  ,
+  (DEFAULT, 9, '1 cup sugar')
+  ,
+  (DEFAULT, 9, '6 1/2 cups water')
+  ,
+  (DEFAULT, 9, '1- 2 liter bottle lemon-lime soda')
+  ,
+  (DEFAULT, 9, '1 tsp vanilla extract')
+  ,
+  (DEFAULT, 9, '1 tsp almond extract');
+
+ALTER TABLE ingredients 
+    ALTER COLUMN ingredient TYPE
+text;
