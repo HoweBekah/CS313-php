@@ -24,7 +24,7 @@ catch (PDOException $ex) {
 session_start();
 //echo $_GET['id'];
 //echo $db->query('SELECT category FROM category WHERE catid ='. $_GET['id']);
-$categoryName = $db->execute('SELECT category FROM category WHERE catid =' . $_GET['id']);
+$categoryName = $db->query('SELECT category FROM category WHERE catid =' . $_GET['id']);
  echo $categoryName;
 ?>
 <!DOCTYPE html>
@@ -35,6 +35,9 @@ $categoryName = $db->execute('SELECT category FROM category WHERE catid =' . $_G
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $categoryName; ?> Recipes</title>
 </head>
+<header>
+<?php include('header.php') ?>
+</header>
 <body>
     <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
