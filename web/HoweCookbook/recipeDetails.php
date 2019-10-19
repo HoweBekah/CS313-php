@@ -51,9 +51,9 @@ $stmt2->execute();
    <h2>Ingredients:</h2>
    <ul id="ingred">
    <?php
-   foreach ($db->query($query2) as $row) {
+   /*foreach ($db->query($query2) as $row) {
   
- echo "<li>" . $row['ingredient'] . "</li>";}
+ echo "<li>" . $row['ingredient'] . "</li>";}*/
     ?>
 </ul>
 
