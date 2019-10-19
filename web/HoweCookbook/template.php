@@ -39,7 +39,7 @@ session_start();
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
 <main>
-   
+   <h1 id="pageTitle"></h1>
     
     </main>
     <footer></footer>

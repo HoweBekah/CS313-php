@@ -3,7 +3,7 @@
   text-align: center;
   padding: 0;
 }
-/*#90C2E7*/
+/**/
 body {
   background-color: #a31621;
   color: #ced3dc;
@@ -59,4 +59,23 @@ main {
 
 .categorybtns:hover {
   background-color: #ced3dc;
+}
+
+#pageTitle {
+  font-size: 1.5em;
+  color: #fcf7f8;
+  text-decoration: underline #4e8098;
+}
+
+#recipesOL {
+  background-color: #90c2e7;
+  color: #a31621;
+  margin: auto;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+#recipesOL li {
+  font-size: 2em;
+  padding: 0.5em;
 }

@@ -39,6 +39,7 @@ session_start();
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
 <main>
+<h1 id="pageTitle">Categories</h1>
     <div id="mainBTNdiv">
     <?php
     foreach ($db->query('SELECT * FROM category') as $row) {
