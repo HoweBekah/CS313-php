@@ -131,14 +131,15 @@ footer {
 .addUpdate {
   text-align: center;
   color: #a31621;
-  font-size: 1.5em;
-  margin: 0.5em;
-  padding: 0.75em;
+  font-size: 1.75em;
+  margin: 1em;
+  padding: 1em;
   background-color: #fcf7f8;
   text-decoration: none;
   font-weight: bolder;
   border-radius: 15px;
   box-shadow: 0.3em 0.3em 0.5em #4e8098;
+  font-family: "Kalam", cursive;
 }
 .addUpdate:hover {
   background-color: #ced3dc;
