@@ -53,8 +53,8 @@ $stmt->execute();
    <?php
    foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
   
- echo "<h4>" . $row['ingredient'] . "</h4>";}
- 
+ echo  $row['ingredient'] ;}
+
  /*echo $recipeInfo['ingredients']; */
     ?>
 </p>
