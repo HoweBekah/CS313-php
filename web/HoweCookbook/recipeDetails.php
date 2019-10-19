@@ -29,7 +29,7 @@ $stmt->execute();
  $query = 'SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
- $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
+ $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
