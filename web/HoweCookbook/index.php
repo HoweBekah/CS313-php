@@ -39,7 +39,6 @@ session_start();
         $url = "categoryRecipes.php?" ."id=" . $row['catid'];
      echo "<a href='$url' class='categorybtns'>" . $row['category'] . "</a>";
        }
-
     ?>
     
 </body>
