@@ -22,8 +22,8 @@ catch (PDOException $ex) {
 }
 
 session_start();
-//echo $_GET['id'];
-$categoryName = $db->query("SELECT * FROM category WHERE catid =" . $_GET['id']);
+echo $_GET['id'];
+$categoryName = $db->query("SELECT * FROM category WHERE category.catid =" . $_GET['id']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@ $categoryName = $db->query("SELECT * FROM category WHERE catid =" . $_GET['id'])
     <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
 
-echo "<p>" . $_GET['id'] . "</p>";
+//echo "<p>" . $_GET['id'] . "</p>";
     foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName. "'") as $row) {
      echo "<h3>" . $row['recipe_name'] . "</h3>";
        }
