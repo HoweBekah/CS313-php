@@ -20,11 +20,11 @@ header img {
 
 #howeHeader {
   font-size: 2.75em;
-  padding: 1em;
+  padding: 0.5em;
   background-color: #4e8098;
   color: #fcf7f8;
   display: inline-block;
-  margin: 1.5em auto;
+  margin: 1em auto;
   margin-top: 0.5em;
   border-radius: 15px;
 }
@@ -37,6 +37,7 @@ header img {
   grid-template-rows: repeat(3, 1fr);
   column-gap: 1.5em;
   row-gap: 1.5em;
+  margin: 2em;
 }
 
 .categorybtns {
@@ -47,4 +48,7 @@ header img {
   text-decoration: none;
   font-weight: bolder;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
