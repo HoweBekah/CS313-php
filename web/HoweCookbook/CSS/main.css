@@ -4,16 +4,16 @@
   padding: 0;
 }
 
-html {
+body {
   background-color: #a31621;
   color: #ced3dc;
 }
 .categorybtns {
-  color: lightblue;
+  color: #4e8098;
   font-size: 1em;
   padding: 0.5em;
   margin: 0.5em;
-  background-color: black;
+  background-color: #fcf7f8;
   text-decoration: none;
   font-weight: bolder;
 }
