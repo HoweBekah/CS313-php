@@ -28,6 +28,7 @@ header img {
   margin: 1em auto;
   margin-top: 0.5em;
   border-radius: 15px;
+  text-shadow: 0.4em 0.4em 0.4em #a31621;
 }
 main {
   margin: auto;
@@ -39,6 +40,7 @@ main {
   grid-template-rows: repeat(3, 1fr);
   column-gap: 1.5em;
   row-gap: 1.5em;
+  margin-bottom: 2em;
 }
 
 .categorybtns {
@@ -52,5 +54,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0.5em 0.5em 0.5em #4e8098;
+  box-shadow: 0.3em 0.3em 0.5em #4e8098;
+}
+
+.categorybtns:hover {
+  background-color: #ced3dc;
 }
