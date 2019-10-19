@@ -22,10 +22,11 @@ catch (PDOException $ex) {
 }
 
 session_start();
+$query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
+$db->prepare($query);
+$db->execute(); 
+ $categoryName = $query->fetchAll(PDO::FETCH_ASSOC);
 
-
-$categoryName = $db->query('SELECT category FROM category WHERE catid ='. $_GET['id']);
- //echo $categoryName;
 ?>
 <!DOCTYPE html>
 <html lang="en">
