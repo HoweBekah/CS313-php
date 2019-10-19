@@ -138,8 +138,8 @@ footer {
   text-decoration: none;
   font-weight: bolder;
   border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0.3em 0.3em 0.5em #4e8098;
+}
+.addUpdate:hover {
+  background-color: #ced3dc;
 }
