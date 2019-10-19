@@ -41,7 +41,7 @@ session_start();
     <div id="content">
 <header>
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
-<h1 id="howeHeader">Howe Family Cookbook</h1>
+<a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
     <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
