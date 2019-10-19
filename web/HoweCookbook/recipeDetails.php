@@ -62,7 +62,7 @@ $stmt->execute();
 <p id="instruct">
     <?php echo $recipeInfo['instructions']; ?>
 </p>
-    
+<input class="addUpdate" type="button" value="Add Recipe">
     </main>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe

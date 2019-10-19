@@ -127,3 +127,18 @@ footer {
   margin-top: 4em;
   padding-bottom: 0.5em;
 }
+
+.addUpdate {
+  color: #a31621;
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 0.75em;
+  background-color: #fcf7f8;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.3em 0.3em 0.5em #4e8098;
+}
