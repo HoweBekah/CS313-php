@@ -35,7 +35,7 @@ session_start();
 <body>
     <h1>Howe Family Cookbook</h1>
     <?php
-    foreach ($db->query('SELECT * FROM category') as $row) {
+    foreach ($db->query('SELECT * FROM category WHERE catid = 3') as $row) {
         $url = "categoryRecipes.php?" ."id=" . $row['catid'];
      echo "<a href='$url' class='categorybtns'>" . $row['category'] . "</a>";
      $_SESSION['catid'];
