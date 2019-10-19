@@ -37,6 +37,8 @@ session_start();
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
 <h1 id="howeHeader">Howe Family Cookbook</h1>
 </header>
+<main>
+    <div id="mainBTNdiv">
     <?php
     foreach ($db->query('SELECT * FROM category') as $row) {
         $url = "categoryRecipes.php?" ."id=" . $row['catid'];
@@ -44,6 +46,8 @@ session_start();
    
        }
     ?>
+    </div>
+    </main>
     <footer></footer>
 </body>
 </html>

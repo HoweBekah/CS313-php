@@ -9,11 +9,16 @@ body {
   color: #ced3dc;
 }
 header img {
-  position: absolute;
+  position: relative;
 }
 
 #howeHeader {
-  position: relative;
+  position: absolute;
+}
+
+#mainBTNdiv {
+  width: 35%;
+  margin: auto;
 }
 
 .categorybtns {
