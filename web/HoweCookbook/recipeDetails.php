@@ -47,7 +47,7 @@ $stmt->execute();
    <h2>Ingredients:</h2>
    <ul id="ingred">
    <?php
-   foreach ($db->query('SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
+   foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
   
  echo "<li>" . $row['ingredient'] . "</li>";}
     ?>
