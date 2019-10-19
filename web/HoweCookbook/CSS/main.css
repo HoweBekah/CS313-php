@@ -122,6 +122,9 @@ main {
   border-radius: 20px;
   font-weight: lighter;
   margin: 0.4em;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 6em);
 }
 footer {
   margin-top: 4em;
