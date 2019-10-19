@@ -51,11 +51,10 @@ $stmt->execute();
    <h2>Ingredients:</h2>
    <p id="ingred">
    <?php
-   foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
+   /*foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
   
- echo  $row['ingredient'] ;}
-
- /*echo $recipeInfo['ingredients']; */
+ echo "<li>" . $row['ingredient'] . "</li>";}*/
+ echo $recipeInfo['ingredients']; 
     ?>
 </p>
 
