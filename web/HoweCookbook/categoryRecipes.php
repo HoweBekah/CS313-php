@@ -53,7 +53,7 @@ $stmt->execute();
      echo "<li>" . $row['recipe_name'] . "</li>";
        }
     ?>
-    </ul>
+    </ol>
     </div>
 </body>
 </html>
