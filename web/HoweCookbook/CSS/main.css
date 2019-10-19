@@ -126,6 +126,7 @@ main {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   column-gap: 1em;
   justify-items: left;
 }
