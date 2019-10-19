@@ -37,7 +37,7 @@ session_start();
     <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
 
-echo $_GET['catid'];
+echo $_SESSION['catid'];
     foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName. "'") as $row) {
      echo "<h3>" . $row['recipe_name'] . "</h3>";
        }
