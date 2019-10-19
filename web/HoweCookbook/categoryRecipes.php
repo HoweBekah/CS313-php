@@ -44,11 +44,11 @@ $stmt->execute();
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
-    <h1><?php echo $categoryName; ?> Recipes</h1>
+    <h1><?php echo $categoryName['category']; ?> Recipes</h1>
     <?php
 
 //echo "<p>" . $_GET['id'] . "</p>";
-    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName. "'") as $row) {
+    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName['category'] . "'") as $row) {
      echo "<h3>" . $row['recipe_name'] . "</h3>";
        }
     ?>
