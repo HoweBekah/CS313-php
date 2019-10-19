@@ -25,6 +25,11 @@ $query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
  $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
+
+ $query2 = 'SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid'];
+$stmt2 = $db->prepare($query2);
+$stmt2->execute(); 
+ $ingredientList = $stmt2->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,11 +49,13 @@ $stmt->execute();
 <main>
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
    <h2>Ingredients:</h2>
-   <p id="ingred">
+   <ul id="ingred">
    <?php
-    echo $recipeInfo['ingredients'];
+   foreach ($db->query($query2) as $row) {
+  
+ echo "<li>" . $row['ingredient'] . "</li>";}
     ?>
-</p>
+</ul>
 
 <h2>Instructions:</h2>
 <p id="instruct">

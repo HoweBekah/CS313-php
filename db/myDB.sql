@@ -134,5 +134,43 @@ CREATE TABLE ingredients
   ,
   recipe int REFERENCES recipes (recipe_id) NOT NULL
   ,
-  ingredient text NOT NULL
-)
+  ingredient VARCHAR(50) NOT NULL
+);
+
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 8, '1 1/2 cups whipping cream')
+  ,
+  (DEFAULT, 8, '1 14 oz can sweetened condensed milk')
+  ,
+  (DEFAULT, 8, '6 cups milk')
+  ,
+  (DEFAULT, 8, '1 tsp vanilla')
+  ,
+  (DEFAULT, 8, '2 cups milk chocolate chips');
+
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 4, '2 cups Tang')
+  ,
+  (DEFAULT, 4, '2 cups lemonade powder')
+  ,
+  (DEFAULT, 4, '1 pkg orange kool aid')
+  ,
+  (DEFAULT, 4, '2 tsp cinnamon')
+  ,
+  (DEFAULT, 4, '2 tsp cloves')
+  ,
+  (DEFAULT, 2, '5 quarts water')
+  ,
+  (DEFAULT, 2, '3 1/2 cups sugar')
+  ,
+  (DEFAULT, 2, '1 cinnamon stick')
+  ,
+  (DEFAULT, 2, '1 tsp cloves, ground')
+  ,
+  (DEFAULT, 2, '1 12 oz can orange juice concentrate')
+   ,
+  (DEFAULT, 2, '1/2 - 12 oz can lemonade concentrate')
+   ,
+  (DEFAULT, 2, '1 pkg. orange kool-aid');
