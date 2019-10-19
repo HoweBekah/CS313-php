@@ -3,17 +3,26 @@
   text-align: center;
   padding: 0;
 }
-
+/*#4e8098*/
 body {
   background-color: #a31621;
   color: #ced3dc;
 }
+header img {
+  position: absolute;
+}
+
+#howeHeader {
+  position: relative;
+}
+
 .categorybtns {
-  color: #4e8098;
-  font-size: 1em;
-  padding: 0.5em;
-  margin: 0.5em;
+  color: #a31621;
+  font-size: 3em;
+  padding: 1em;
+  margin: 1.5em;
   background-color: #fcf7f8;
   text-decoration: none;
   font-weight: bolder;
+  display: block;
 }

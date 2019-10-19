@@ -37,7 +37,7 @@ $categoryName = $db->query('SELECT category FROM category WHERE catid =' . $_GET
 </head>
 <header>
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
-<h1>Howe Family Cookbook</h1>
+<h1 id="howeHeader">Howe Family Cookbook</h1>
 </header>
 <body>
     <h1><?php echo $categoryName; ?> Recipes</h1>
