@@ -22,6 +22,7 @@ catch (PDOException $ex) {
 }
 
 session_start();
+//echo $_GET['id'];
 
 $categoryName = $db->query('SELECT category FROM category WHERE catid ='. $_GET['id']);
  //echo $categoryName;
@@ -42,7 +43,7 @@ $categoryName = $db->query('SELECT category FROM category WHERE catid ='. $_GET[
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
-    <h1><?php echo ?> Recipes</h1>
+    <h1><?php echo $categoryName; ?> Recipes</h1>
     <?php
 
 //echo "<p>" . $_GET['id'] . "</p>";
