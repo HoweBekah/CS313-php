@@ -64,8 +64,9 @@ main {
 #pageTitle {
   font-size: 2.5em;
   color: #fcf7f8;
-  text-decoration: underline #4e8098;
+  border-bottom: 0.25em solid#4e8098;
   margin-bottom: 1em;
+  display: inline-block;
 }
 
 #recipesOL {
@@ -75,12 +76,13 @@ main {
   margin: auto;
   padding: 1em;
   border-radius: 1em;
-  text-align: left;
   width: 40%;
   padding: 0.5em;
+  padding-left: 1.5em;
 }
 
 #recipesOL li {
   font-size: 2em;
   padding: 0.5em;
+  text-align: left;
 }
