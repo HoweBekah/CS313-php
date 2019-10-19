@@ -22,10 +22,6 @@ catch (PDOException $ex) {
 }
 
 session_start();
-//echo $_GET['id'];
-//echo $db->query('SELECT category FROM category WHERE catid ='. $_GET['id']);
-//$categoryName = $db->query('SELECT category FROM category WHERE catid =' . $_GET['id']);
- //echo $categoryName;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,23 +30,19 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/main.css" />
-    <title><?php echo $categoryName; ?> Recipes</title>
+    <title> | Howe Cookbook</title>
 </head>
-
 <body>
     <div id="content">
 <header>
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
 <h1 id="howeHeader">Howe Family Cookbook</h1>
 </header>
-    <h1><?php echo $categoryName; ?> Recipes</h1>
-    <?php
-
-//echo "<p>" . $_GET['id'] . "</p>";
-    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName. "'") as $row) {
-     echo "<h3>" . $row['recipe_name'] . "</h3>";
-       }
-    ?>
+<main>
+   
+    
+    </main>
+    <footer></footer>
     </div>
 </body>
 </html>
