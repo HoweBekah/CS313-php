@@ -22,7 +22,7 @@ catch (PDOException $ex) {
 }
 
 session_start();
-echo $_GET['id'];
+//echo $_GET['id'];
 $categoryName = $db->query("SELECT * FROM category WHERE catid =" . $_GET['id']);
 ?>
 <!DOCTYPE html>
