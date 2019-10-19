@@ -54,5 +54,8 @@ $stmt->execute();
     ?>
     </ol>
     </div>
+    <footer><h4>
+            &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
+    </h4></footer>
 </body>
 </html>
