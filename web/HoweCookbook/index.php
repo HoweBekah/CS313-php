@@ -33,6 +33,7 @@ session_start();
     <title>Home | Howe Cookbook</title>
 </head>
 <body>
+    <div id="content">
 <header>
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
 <h1 id="howeHeader">Howe Family Cookbook</h1>
@@ -49,5 +50,6 @@ session_start();
     </div>
     </main>
     <footer></footer>
+    </div>
 </body>
 </html>

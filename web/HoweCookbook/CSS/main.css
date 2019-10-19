@@ -8,16 +8,22 @@ body {
   background-color: #a31621;
   color: #ced3dc;
 }
+
+#content {
+  width: 80%;
+}
+
 header img {
   margin: auto;
 }
 
 #howeHeader {
-  font-size: 2em;
+  font-size: 4em;
   padding: 1em;
   background-color: #4e8098;
   color: #fcf7f8;
   display: inline-block;
+  margin: 0.5em, auto, 1.5em, auto;
 }
 
 #mainBTNdiv {
