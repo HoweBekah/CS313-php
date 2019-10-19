@@ -48,7 +48,7 @@ $stmt->execute();
     <ol id="recipesOL">
     <?php
     foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName['category'] . "'") as $row) {
-        $url = "recipeDetails.php?" ."id=" . $row['recipe_id'];
+        $url = "recipeDetails.php?" ."recipeid=" . $row['recipe_id'];
         echo "<a href='$url'><li>" . $row['recipe_name'] . "</li></a>";
        }
     ?>

@@ -21,7 +21,7 @@ catch (PDOException $ex) {
     die();
 }
 session_start();
-$query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['id'];
+$query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
  $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
