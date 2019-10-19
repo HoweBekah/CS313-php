@@ -44,14 +44,16 @@ $stmt->execute();
 </header>
 <main>
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
+   <h5>Ingredients:</h5>
    <ul>
    <?php
-    foreach ($recipeInfo['recipe_ingredients'] as $row) {
+    foreach ('SELECT * FROM recipes WHERE recipe_name = ' . "'" . $recipeInfo['recipe_name'] . "'" as $row) {
      echo "<li>" . $row['ingredients'] . "</li>";
        }
     ?>
 </ul>
 
+<h5>Instructions:</h5>
 <p>
     <?php echo $recipeInfo['instructions']; ?>
 </p>
