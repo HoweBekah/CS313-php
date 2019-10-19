@@ -20,13 +20,11 @@ catch (PDOException $ex) {
     echo 'Error!: ' . $ex->getMessage();
     die();
 }
-
 session_start();
-$query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
+$query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['id'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
- $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
-
+ $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,24 +33,30 @@ $stmt->execute();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/main.css" />
-    <title><?php echo $categoryName['category']; ?> Recipes | Howe Cookbook</title>
+    <title><?php echo $recipeInfo['recipe_name']; ?> | Howe Cookbook</title>
 </head>
-
 <body>
     <div id="content">
 <header>
 <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
-    <h1 id="pageTitle"><?php echo $categoryName['category']; ?> Recipes</h1>
-    <ol id="recipesOL">
-    <?php
-    foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryName['category'] . "'") as $row) {
-        $url = "recipeDetails.php?" ."id=" . $row['recipe_id'];
-        echo "<a href='$url'><li>" . $row['recipe_name'] . "</li></a>";
+<main>
+   <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
+   <ul>
+   <?php
+    foreach ($db->query('SELECT ingredients FROM recipes WHERE recipe_name = ' . "'" . $recipeInfo['recipe_name'] . "'") as $row) {
+     echo "<li>" . $row['ingredients'] . "</li>";
        }
     ?>
-    </ol>
+</ul>
+
+<p>
+    <?php echo $recipeInfo['instructions']; ?>
+</p>
+    
+    </main>
+    <footer></footer>
     </div>
 </body>
 </html>

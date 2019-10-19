@@ -1,14 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Crete+Round|Kalam&display=swap");
+
 * {
   margin: 0;
   text-align: center;
   padding: 0;
 }
 /**/
+
 body {
   background-color: #a31621;
   color: #ced3dc;
+  font-family: "Crete Round", serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kalam", cursive;
+}
 #content {
   width: 80%;
   margin: auto;
@@ -85,6 +96,6 @@ main {
 
 #recipesOL li {
   font-size: 2em;
-  padding: 0.5em;
+  /*padding: 0.5em;*/
   text-align: left;
 }
