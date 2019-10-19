@@ -55,11 +55,6 @@ $stmt->execute();
     </ol>
     <input class="addUpdate" type="button" value="Add Recipe">
     </div>
-    <?php 
-    foreach ($db->query('SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
-  
-        echo "<li>" . $row['ingredient'] . "</li>";}
-    ?>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
     </h4></footer>
