@@ -14,15 +14,17 @@ header img {
 
 #howeHeader {
   position: absolute;
-  text-align: center;
+  justify-self: center;
 }
 
 #mainBTNdiv {
-  width: 80%;
+  width: 75%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 4em);
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 .categorybtns {
