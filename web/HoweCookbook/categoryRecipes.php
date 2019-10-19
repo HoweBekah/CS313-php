@@ -26,7 +26,7 @@ session_start();
 $query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
 echo $query;
 $categoryName = $db->query('SELECT category FROM category WHERE catid ='. $_GET['id']);
- echo $categoryName;
+ //echo $categoryName;
 ?>
 <!DOCTYPE html>
 <html lang="en">
