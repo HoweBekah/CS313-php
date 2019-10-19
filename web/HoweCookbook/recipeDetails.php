@@ -43,15 +43,15 @@ $stmt->execute();
 </header>
 <main>
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
-   <h3>Ingredients:</h3>
-   <ul>
+   <h2>Ingredients:</h2>
+   <p id="ingred">
    <?php
     echo $recipeInfo['ingredients'];
     ?>
-</ul>
+</p>
 
-<h3>Instructions:</h3>
-<p>
+<h2>Instructions:</h2>
+<p id="instruct">
     <?php echo $recipeInfo['instructions']; ?>
 </p>
     
