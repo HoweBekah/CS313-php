@@ -14,6 +14,7 @@ header img {
 
 #howeHeader {
   position: absolute;
+  text-align: center;
 }
 
 #mainBTNdiv {
@@ -29,4 +30,5 @@ header img {
   background-color: #fcf7f8;
   text-decoration: none;
   font-weight: bolder;
+  display: block;
 }
