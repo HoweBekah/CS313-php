@@ -18,8 +18,11 @@ header img {
 }
 
 #mainBTNdiv {
-  width: 45%;
+  width: 80%;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 4em);
 }
 
 .categorybtns {
