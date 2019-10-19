@@ -75,6 +75,7 @@ main {
 #pageTitle {
   font-size: 2.5em;
   color: #fcf7f8;
+  padding-bottom: 0.07em;
   border-bottom: 0.1em solid#4e8098;
   margin-bottom: 1em;
   display: inline-block;
@@ -92,13 +93,14 @@ main {
   padding-left: 1.5em;
   text-align: center;
   margin-bottom: 4em;
+  text-decoration: none;
 }
 
 #recipesOL li {
   font-size: 2em;
   /*padding: 0.5em;
   text-align: left;*/
-
+  text-decoration: none;
   color: #a31621;
 }
 #recipesOL li a:link {
