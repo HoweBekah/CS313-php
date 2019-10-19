@@ -38,6 +38,7 @@ session_start();
     foreach ($db->query('SELECT * FROM category') as $row) {
         $url = "categoryRecipes.php?" ."id=" . $row['catid'];
      echo "<a href='$url' class='categorybtns'>" . $row['category'] . "</a>";
+     $_SESSION['catid'];
        }
     ?>
     
