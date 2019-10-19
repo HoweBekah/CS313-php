@@ -17,7 +17,7 @@
       
         <ul id="assignmentnames">
             <li>Assignment 1: <a href="../shoppingCart/itemBrowse.php">Shopping Cart</a></li>
-            <li>Assignment 2: <a href="#">???</a></li>
+            <li>Assignment 2: <a href="../HoweCookbook/index.php">Cookbook 1.0</a></li>
             <li>Assignment 3: <a href="#">????</a></li>
         </ul>
 
