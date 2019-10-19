@@ -116,6 +116,7 @@ main {
   margin: 0.25em;
 }
 #ingred {
+  width: 60%;
   background-color: #4e8098;
   color: #fcf7f8;
   padding: 0.5em;
@@ -124,7 +125,8 @@ main {
   margin: 0.4em;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, 6em);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
 }
 footer {
   margin-top: 4em;
