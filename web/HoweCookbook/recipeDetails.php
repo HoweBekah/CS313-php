@@ -25,12 +25,6 @@ $query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
  $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
-
- $query = 'SELECT catid FROM category WHERE catid ='. $_GET['id'];
- $stmt = $db->prepare($query);
- $stmt->execute(); 
-  $categoryId = $stmt->fetch(PDO::FETCH_ASSOC);
-
 /* $query = 'SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
@@ -68,8 +62,7 @@ $stmt->execute();
     <?php echo $recipeInfo['instructions']; ?>
 </p>
 <input class="addUpdate" type="button" value="Update Recipe">
-<?php  // $url = "recipeDetails.php?" ."recipeid=" . $categoryId;
-//echo "<a href='$url' class='addUpdate'>Back to Category</a>"?>
+
     </main>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
