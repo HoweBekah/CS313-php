@@ -45,7 +45,7 @@ $stmt->execute();
     <h1 id="pageTitle"><?php echo $categoryName['category']; ?> Recipes</h1>
     <ol id="recipesOL">
     <?php
-    foreach ($db->query('SELECT ingredients FROM recipes2 WHERE category = 1') as $row) {
+    foreach ($db->query('SELECT ingredients FROM recipes2 WHERE category = "Beverages"') as $row) {
         $url = "recipeDetails.php?" ."recipeid=" . $row['recipe_id'];
         echo "<a href='$url'><li>" . $row['ingredients'] . "</li></a>";
 
