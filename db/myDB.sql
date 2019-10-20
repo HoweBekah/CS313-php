@@ -395,10 +395,13 @@ VALUES
   (DEFAULT, 21, '1/2 cup butter, softened');
 
 
+INSERT INTO ingredients
+VALUES(DEFAULT, 12, '1/2 teaspoon ground nutmeg')
+
 UPDATE ingredients 
-SET ingredient = 'TOPPING: 2 tablespoon sugar'
+SET ingredient = 'TOPPING: <br> 2 tablespoon sugar <br> 1/2 teaspoon ground nutmeg'
 WHERE
-   ingredient_id = 50
+   ingredient_id = 51
 ;
 
 
