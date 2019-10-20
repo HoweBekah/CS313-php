@@ -46,7 +46,7 @@ $stmt->execute();
 
     <ol id="recipesOL">
     <?php
-    foreach ($db->query('SELECT ingredients FROM recipes2 WHERE catid = 4') as $row) {
+    foreach ($db->query('SELECT unnest(ingredients) FROM recipes2 WHERE catid = 4') as $row) {
         $url = "recipeDetails.php?" ."recipeid=" . $row['recipe_id'];
         echo "<a href='$url'><li>" . $row['ingredients'] . "</li></a>";
 
