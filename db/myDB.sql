@@ -251,6 +251,149 @@ VALUES
   (DEFAULT, 12, '1/2 teaspoon ground nutmeg');
 
 
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 13, '1 cup oil')
+  ,
+  (DEFAULT, 13, '2 1/2 cup sugar')
+  ,
+  (DEFAULT, 13, '3 eggs')
+  ,
+  (DEFAULT, 13, '3 cup flour')
+  ,
+  (DEFAULT, 13, '1/2 cup buttermilk')
+  ,
+  (DEFAULT, 13, '3/4 tsp. baking soda')
+  ,
+  (DEFAULT, 13, '2 tsp. vanilla')
+  ,
+  (DEFAULT, 13, '1 cup mashed banana')
+  ,
+  (DEFAULT, 13, '1 cup chopped nuts (optional)')
+  ,
+  (DEFAULT, 13, '1/4 cup coconut (optional)')
+  ,
+  (DEFAULT, 14, '1 1/2 cups heavy cream')
+  ,
+  (DEFAULT, 14, '4 cups all-purpose flour')
+  ,
+  (DEFAULT, 14, '4 teaspoon baking powder')
+  ,
+  (DEFAULT, 14, '1/2 teaspoon salt')
+  ,
+  (DEFAULT, 14, '1 cup butter or margarine, softened')
+  ,
+  (DEFAULT, 14, '2 cups sugar')
+  ,
+  (DEFAULT, 14, '4 eggs')
+  ,
+  (DEFAULT, 14, '1 cup milk')
+  ,
+  (DEFAULT, 15, '1-2 heads of fresh broccoli')
+  ,
+  (DEFAULT, 15, '1/2lb of bacon, cooked, drained, and crumbled')
+  ,
+  (DEFAULT, 15, '1 cup smoked almonds')
+  ,
+  (DEFAULT, 15, '1/2 cup chopped red onion')
+  ,
+  (DEFAULT, 15, '1/2 cup raisins')
+  ,
+  (DEFAULT, 15, '1 cup mayonnaise or miracle whip')
+  ,
+  (DEFAULT, 15, '1/4 cup sugar')
+  ,
+  (DEFAULT, 15, '2 Tbsp red wine vinegar');
+
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 16, '8 - 16 oz cans of pork & beans')
+  ,
+  (DEFAULT, 16, '3 cup brown sugar')
+  ,
+  (DEFAULT, 16, '1 lb. (24 slices) bacon, cut into small pieces. Precooked bacon works too.')
+  ,
+  (DEFAULT, 16, '4 tsp. yellow mustard')
+  ,
+  (DEFAULT, 16, '1 cup Ketchup')
+  ,
+  (DEFAULT, 16, '3 tsp. Liquid Smoke')
+  ,
+  (DEFAULT, 17, '1 large can refried beans')
+  ,
+  (DEFAULT, 17, '1 can cream of mushroom soup')
+  ,
+  (DEFAULT, 17, '1lb ground beef')
+  ,
+  (DEFAULT, 17, '1 small can enchilada sauce')
+  ,
+  (DEFAULT, 17, '2 cups shredded cheddar cheese')
+  ,
+  (DEFAULT, 18, '2 2/3 cups all-purpose flour')
+  ,
+  (DEFAULT, 18, '1/2 tsp. baking soda')
+  ,
+  (DEFAULT, 18, '1/4 tsp. salt')
+  ,
+  (DEFAULT, 18, '1 cup light brown sugar, firmly packed')
+  ,
+  (DEFAULT, 18, '1/2 cup white sugar')
+  ,
+  (DEFAULT, 18, '1 cup salted butter, softened')
+  ,
+  (DEFAULT, 18, '1 large egg')
+  ,
+  (DEFAULT, 18, '1 tsp. banana extract')
+  ,
+  (DEFAULT, 18, '3/4 cup (1 medium) mashed ripe banana')
+  ,
+  (DEFAULT, 18, '2 cups (12 oz.) semisweet chocolate chips')
+  ,
+  (DEFAULT, 18, '1 cup (4 oz.) chopped walnuts')
+  ,
+  (DEFAULT, 19, '3 cup powdered sugar')
+  ,
+  (DEFAULT, 19, '1/3 cup butter, softened')
+  ,
+  (DEFAULT, 19, '1 1/2 tsp vanilla')
+  ,
+  (DEFAULT, 19, 'About 2 tablespoons milk');
+
+
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 20, '2 1/2 cups flour')
+  ,
+  (DEFAULT, 20, '1 tbsp sugar')
+  ,
+  (DEFAULT, 20, '1 1/2 tsp salt')
+  ,
+  (DEFAULT, 20, '7 tbsp. very cold butter, cut into small pieces')
+  ,
+  (DEFAULT, 20, '7 tbsp. very cold shortening, cut into pieces')
+  ,
+  (DEFAULT, 20, '1/2 cup ice water')
+  ,
+  (DEFAULT, 21, '3lbs apples (6 to 8), peeled, cored, and sliced')
+  ,
+  (DEFAULT, 21, '1/4 cup sugar')
+  ,
+  (DEFAULT, 21, '1 1/2 tbsp lemon juice')
+  ,
+  (DEFAULT, 21, '1/2 tsp grated lemon zest (opt)')
+  ,
+  (DEFAULT, 21, '3/4 cups oats')
+  ,
+  (DEFAULT, 21, '3/4 cup brown sugar')
+  ,
+  (DEFAULT, 21, '1/2 cup flour')
+  ,
+  (DEFAULT, 21, '1 tsp. cinnamon')
+  ,
+  (DEFAULT, 21, '1/4 tsp. salt')
+  ,
+  (DEFAULT, 21, '1/2 cup butter, softened');
+
 CREATE TABLE recipes2
 (
   recipe_id SERIAL PRIMARY KEY
