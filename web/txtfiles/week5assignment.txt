@@ -4,20 +4,21 @@ After completing the assignment, please answer the questions in this text file a
 https://calm-savannah-95519.herokuapp.com/HoweCookbook/index.php
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+https://github.com/HoweBekah/CS313-php/tree/master/web/HoweCookbook
 
 3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
-
+The correct category recipes populates on a new page when a specific category is chosen. The correct recipe populates on a new page when a specific recipe is chosen. I don't have a ton of recipes in my db yet so choose Beverages and pick any of the recipes there. 
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+The only thing not working currently is the "Back to Category" button.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
+It was frustrating at first, but once I figured out how to get the info from my DB then I learned alot about how to populate that info into the html using php.
 
 6. Why should you create a separate user account for your application to access the database?
+So that the information in the DB can't be manipulated by any other user. 
 
-
-7. Please select the category you feel best describes your assignment:
+7. Please select the category you feel best describes your assignment: 4
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -26,4 +27,5 @@ https://calm-savannah-95519.herokuapp.com/HoweCookbook/index.php
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
-
+The work I did definitely meets the requirements for this assignment. 
+I'd venture it's closer to above requirements because the css looks great and the app performs its main function of displaying recipes in a good looking manner. 
