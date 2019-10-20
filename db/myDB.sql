@@ -201,6 +201,56 @@ VALUES
   ,
   (DEFAULT, 9, '1 tsp almond extract');
 
+
+INSERT INTO ingredients
+VALUES
+  (DEFAULT, 10, '4 1/4 cups self rising flour')
+  ,
+  (DEFAULT, 10, '2 cups buttermilk')
+  ,
+  (DEFAULT, 10, '1/2 cup butter')
+  ,
+  (DEFAULT, 10, '1/4 tsp. baking powder')
+  ,
+  (DEFAULT, 10, '1/8 tsp. baking soda')
+  ,
+  (DEFAULT, 10, '1 tbsp. sugar')
+  ,
+  (DEFAULT, 11, '2 cups all purpose flour')
+  ,
+  (DEFAULT, 11, '2 tsp. sugar')
+  ,
+  (DEFAULT, 11, '2 tsp. baking powder')
+  ,
+  (DEFAULT, 11, '1/2 tsp. salt')
+  ,
+  (DEFAULT, 11, '1 1/2 cups heavy cream')
+  ,
+  (DEFAULT, 12, '4 cups all-purpose flour')
+  ,
+  (DEFAULT, 12, '4 teaspoon baking powder')
+  ,
+  (DEFAULT, 12, '1/2 teaspoon salt')
+  ,
+  (DEFAULT, 12, '1 cup butter or margarine, softened')
+  ,
+  (DEFAULT, 12, '2 cups sugar')
+  ,
+  (DEFAULT, 12, '4 eggs')
+  ,
+  (DEFAULT, 12, '1 cup milk')
+  ,
+  (DEFAULT, 12, '2 teaspoon vanilla extract')
+  ,
+  (DEFAULT, 12, '2 cups frozen blueberries, unthawed')
+  ,
+  (DEFAULT, 12, 'TOPPING:')
+  ,
+  (DEFAULT, 12, '2 tablespoon sugar')
+  ,
+  (DEFAULT, 12, '1/2 teaspoon ground nutmeg');
+
+
 CREATE TABLE recipes2
 (
   recipe_id SERIAL PRIMARY KEY
