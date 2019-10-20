@@ -46,7 +46,7 @@ $stmt->execute();
 
     <ol id="recipesOL">
     <?php
-    $query = 'SELECT unnest(ingredients) FROM recipes2 WHERE catid = 2';
+    $query = 'SELECT ingredients FROM recipes2 WHERE catid = 2';
     $stmt = $db->prepare($query);
     $stmt->execute(); 
      $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
