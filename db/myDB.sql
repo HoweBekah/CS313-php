@@ -201,6 +201,31 @@ VALUES
   ,
   (DEFAULT, 9, '1 tsp almond extract');
 
-ALTER TABLE ingredients 
-    ALTER COLUMN ingredient TYPE
-text;
+CREATE TABLE recipes2
+(
+  recipe_id SERIAL PRIMARY KEY
+  ,
+  recipe_name text NOT NULL
+,
+  ingredients text
+  [] NOT NULL
+,
+  instructions text NOT NULL
+,
+  category VARCHAR
+  (20) REFERENCES category
+  (category) NOT NULL);
+
+  INSERT INTO recipes2
+  VALUES
+    (DEFAULT, 'Holiday Punch', '{"1-2 liter bottle ginger ale", "1-64 oz bottle Cranberry juice cocktail"}', 'Combine and serve cold.', ( SELECT category
+      FROM category
+      WHERE category ='Beverages' )) 
+,
+    (DEFAULT, 'Hot Punch', '{"5 quarts water", "3 1/2 cups sugar", "1 cinnamon stick", "1 tsp cloves, ground", "1 - 12 oz can orange juice concentrate", "1/2 - 12 oz can lemonade concentrate", "1 pkg. orange kool-aid"}', 'Add 4 quarts water, sugar, cinnamon stick, cloves, orange juice concentrate, lemonade concentrate and kool-aid to a 6 quart slow cooker. Stir to combine. Allow 1-2 hours for the punch to heat up. Note: the cloves will incorporate into the punch better if you make a paste with a little water before you add them to the mixture.', ( SELECT category
+      FROM category
+      WHERE category ='Beverages' ))
+,
+    (DEFAULT, 'Mom''s Brew', '{"1-2 liter bottle lemon-lime soda", "1 - 64 oz. bottle white grape juice"}', 'Combine and serve cold.', ( SELECT category
+      FROM category
+      WHERE category ='Beverages' ));
