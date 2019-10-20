@@ -68,8 +68,8 @@ $stmt->execute();
     <?php echo $recipeInfo['instructions']; ?>
 </p>
 <input class="addUpdate" type="button" value="Update Recipe">
-<?php   $url = "recipeDetails.php?" ."recipeid=" . $categoryId;
-echo "<a href='$url' class='addUpdate'>Back to Category</a>"?>
+<?php  // $url = "recipeDetails.php?" ."recipeid=" . $categoryId;
+//echo "<a href='$url' class='addUpdate'>Back to Category</a>"?>
     </main>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
