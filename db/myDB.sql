@@ -394,6 +394,17 @@ VALUES
   ,
   (DEFAULT, 21, '1/2 cup butter, softened');
 
+
+UPDATE ingredients 
+SET ingredient = 'TOPPING: 2 tablespoon sugar'
+WHERE
+   ingredient_id = 50
+;
+
+
+2
+DELETE FROM ingredients
+WHERE ingredient_id = 52;
 CREATE TABLE recipes2
 (
   recipe_id SERIAL PRIMARY KEY
