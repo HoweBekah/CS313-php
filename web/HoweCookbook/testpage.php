@@ -46,11 +46,10 @@ $stmt->execute();
 
     <ol id="recipesOL">
     <?php
-    foreach ($db->query('SELECT unnest(ingredients) FROM recipes2 WHERE catid = 4') as $row) {
-        $url = "recipeDetails.php?" ."recipeid=" . $row['recipe_id'];
-        echo "<a href='$url'><li>" . $row['ingredients'] . "</li></a>";
-
-       }
+    $query = 'SELECT unnest(ingredients) FROM recipes2 WHERE catid = 2';
+    $stmt = $db->prepare($query);
+    $stmt->execute(); 
+     $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
     ?>
     </ol>
     <input class="addUpdate" type="button" value="Add Recipe">
