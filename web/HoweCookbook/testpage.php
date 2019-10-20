@@ -21,10 +21,10 @@ catch (PDOException $ex) {
     die();
 }
 session_start();
-$query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
+/*$query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
 $stmt = $db->prepare($query);
 $stmt->execute(); 
- $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
+ $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,11 +54,7 @@ $stmt->execute();
     </ol>
     <input class="addUpdate" type="button" value="Add Recipe">
     </div>
-    <?php 
-    foreach ($db->query('SELECT * FROM ingredients WHERE recipe_id ='. $_GET['recipeid']) as $row) {
   
-        echo "<li>" . $row['ingredient'] . "</li>";}
-    ?>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
     </h4></footer>
