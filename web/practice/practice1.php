@@ -30,7 +30,7 @@
   		echo 'Error!: ' . $ex->getMessage();
   		die();
 	}
-	foreach ($db->query("SELECT * FROM Scriptures WHERE Scriptures.book = '$book'") as $row) {
+	foreach ($db->query("SELECT * FROM scriptures WHERE scriptures.book = '$book'") as $row) {
 		$url = "result.php?" ."id=" . $row['id'];
 		echo "<b><a href=\"$url\">" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . " - </a></b><br/>";
 	}
@@ -38,7 +38,7 @@
 ​
 ?>
 ​
-	<form name="search" action="practice.php" method="post">
+	<form name="search" action="practice1.php" method="post">
 		Search Book: <input type="text" name="book" /> <input type="submit" value="Search"><br/>
 	</form>
 </body>

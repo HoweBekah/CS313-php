@@ -25,7 +25,7 @@
   		echo 'Error!: ' . $ex->getMessage();
   		die();
 	}
-	foreach ($db->query("SELECT * FROM Scriptures WHERE Scriptures.id =" . $_GET['id']) as $row) {
+	foreach ($db->query("SELECT * FROM scriptures WHERE scriptures.id =" . $_GET['id']) as $row) {
 		echo "<b>" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . " - </b>";
             echo '"' . $row['content'] . '"<br><br>';
 	}

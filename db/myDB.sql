@@ -436,3 +436,6 @@ CREATE TABLE recipes2
     (DEFAULT, 'Mom''s Brew', '{"1-2 liter bottle lemon-lime soda", "1 - 64 oz. bottle white grape juice"}', 'Combine and serve cold.', ( SELECT category
       FROM category
       WHERE category ='Beverages' ));
+
+
+      
