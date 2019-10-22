@@ -31,7 +31,7 @@
   		die();
 	}
 	foreach ($db->query("SELECT * FROM scriptures WHERE scriptures.book = '$book'") as $row) {
-		$url = "result1.php?" ."id=" . $row['id'];
+		$url = "results1.php?" ."id=" . $row['id'];
 		echo "<b><a href=\"$url\">" . $row['book'] . " " . $row['chapter'] . ":" . $row['verse'] . "</a></b><br/>";
 	}
 }
