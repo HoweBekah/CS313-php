@@ -22,3 +22,22 @@ INSERT INTO Scriptures
     (book, chapter, verse, content)
 VALUES
     ('Mosiah', 16, 9, 'He is the light and the life of the world; yea, a light that is endless, that can never be darkened; yea, and also a life which is endless, that there can be no more death.');
+
+CREATE TABLE topic
+(
+    id SERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(1000)
+);
+
+INSERT INTO topic
+    (name)
+VALUES
+    ('Faith');
+INSERT INTO topic
+    (name)
+VALUES
+    ('Sacrifice');
+INSERT INTO topic
+    (name)
+VALUES
+    ('Charity');
