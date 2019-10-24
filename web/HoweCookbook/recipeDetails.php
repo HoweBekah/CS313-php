@@ -1,5 +1,7 @@
 <?php  
-try {
+require (connectDB.php);
+$db = connect_db();
+/*try {
         
     $dbUrl = getenv('DATABASE_URL');
     // Get the various parts of the DB Connection from the URL
@@ -19,7 +21,7 @@ catch (PDOException $ex) {
     // the details of the exception.
     echo 'Error!: ' . $ex->getMessage();
     die();
-}
+}*/
 session_start();
 $query = 'SELECT * FROM recipes WHERE recipe_id ='. $_GET['recipeid'];
 $stmt = $db->prepare($query);

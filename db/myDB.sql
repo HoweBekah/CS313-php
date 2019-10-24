@@ -128,6 +128,9 @@ VALUES
     FROM category
     WHERE category ='' */
 
+ALTER TABLE ingredients
+ADD FOREIGN KEY (recipe) REFERENCES recipes (recipe_id);
+
 CREATE TABLE ingredients
 (
   ingredient_id SERIAL PRIMARY KEY
@@ -408,4 +411,4 @@ DELETE FROM ingredients
 WHERE ingredient_id = 52;
 
 
-      
+ALTER TABLE recipes DROP COLUMN ingredients;
