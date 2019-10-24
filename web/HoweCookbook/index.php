@@ -1,5 +1,5 @@
 <?php  
-require (connectDB.php);
+require "connectDB.php";
 $db = connect_db();
 /*try {
         
