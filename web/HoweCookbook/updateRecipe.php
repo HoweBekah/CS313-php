@@ -4,21 +4,21 @@ $db = connect_db();
 
 session_start();
 
-  /*  $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_GET['recipeid'] . "'";
+    $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_GET['recipeid'] . "'";
     $stmt1 = $db->prepare($sql1);
     $stmt1->execute();
     $basicRecipe =$stmt1->fetch(PDO::FETCH_ASSOC);
 $recipeid = $basicRecipe['recipe_id'];
-//$recipename = $basicRecipe['recipe_name'];
-//$recipeinstruct = $basicRecipe['instructions'];
-//$recipecat = $basicRecipe['category'];
+$recipename = $basicRecipe['recipe_name'];
+$recipeinstruct = $basicRecipe['instructions'];
+$recipecat = $basicRecipe['category'];
 
 
 getRecipeInfo($recipeid);
-//updateRecipe($recipeid, $recipename, $recipeinstruct, $recipecat);
-//updateIngredients($recipeid);
+updateRecipe($recipeid, $recipename, $recipeinstruct, $recipecat);
+updateIngredients($recipeid);
 function getRecipeInfo($recipe_id)
-{*/
+{
     $sql = 'SELECT * FROM recipes WHERE recipe_id = :recipe_id';
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':recipe_id', $recipe_id, PDO::PARAM_INT);
@@ -26,8 +26,8 @@ function getRecipeInfo($recipe_id)
     $prodInfo = $stmt->fetch(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
     return $recipeInfo;
-//}
-/*function updateRecipe($recipe_id, $recipe_name, $instructions, $category)
+}
+function updateRecipe($recipe_id, $recipe_name, $instructions, $category)
 {
     $sql = 'UPDATE recipes SET recipe_name = :recipe_name, instructions = :instructions, category = :category WHERE recipe_id = :recipe_id';
     $stmt = $db->prepare($sql);
@@ -56,7 +56,7 @@ function updateIngredients($recipe_id){
    . $stmt->closeCursor(). ';'
     .'END LOOP;';
     return $ingLoop;
-}*/
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,19 +115,19 @@ function updateIngredients($recipe_id){
                             }?>
 
 
-                        <!--<label for="instruct">Instructions:</label>
-                        <textarea name="instruct" id="instruct" rows="3" cols="20" required><?php/* if (isset($instructions)) {
+                        <label for="instruct">Instructions:</label>
+                        <textarea name="instruct" id="instruct" rows="3" cols="20" required><?php if (isset($instructions)) {
                                                                                         echo $instructions;
                                                                                     } elseif (isset($recipeInfo['instructions'])) {
                                                                                         echo $recipeInfo['instructions'];
-                                                                                    } */?></textarea><br />
+                                                                                    } ?></textarea><br />
 
-                                                                                -->
+                                                                              
 
                 <input type="submit" name="submit" id="submit" value="Update Recipe" />
                 <input type="hidden" name="action" value="updateProd">
                 <input type="hidden" name="invId" value="<?php if (isset($recipeInfo['recipe_id'])) {
-                                                                echo $prodInfo['recipe_id'];
+                                                                echo $recipeInfo['recipe_id'];
                                                             } ?>">
             </fieldset>
         </form>
