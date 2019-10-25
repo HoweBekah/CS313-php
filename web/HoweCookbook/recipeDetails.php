@@ -28,7 +28,7 @@ $stmt->execute();
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
 <main>
-    <form method="POST" action="updateRecipe.php?recipeid=<?php $_GET['recipeid']?>" > 
+    <form method="POST" action="updateRecipe.php?recipeid=<?php $recipeInfo['recipe_id']?>" > 
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
    <h2>Ingredients:</h2>
    <ul id="ingred">
