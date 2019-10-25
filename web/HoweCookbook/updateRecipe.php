@@ -8,15 +8,12 @@ session_start();
     $stmt1 = $db->prepare($sql1);
     $stmt1->execute();
     $basicRecipe =$stmt1->fetch(PDO::FETCH_ASSOC);
-$recipeid = $basicRecipe['recipe_id'];
-$recipename = $basicRecipe['recipe_name'];
-$recipeinstruct = $basicRecipe['instructions'];
-$recipecat = $basicRecipe['category'];
 
 
-getRecipeInfo($recipeid);
-updateRecipe($recipeid, $recipename, $recipeinstruct, $recipecat);
-updateIngredients($recipeid);
+
+getRecipeInfo($basicRecipe['recipe_id']);
+updateRecipe($basicRecipe['recipe_id'], $basicRecipe['recipe_name'],$basicRecipe['instructions'], $basicRecipe['category']);
+updateIngredients($basicRecipe['recipe_id']);
 function getRecipeInfo($recipe_id)
 {
     $sql = 'SELECT * FROM recipes WHERE recipe_id = :recipe_id';
@@ -116,11 +113,11 @@ function updateIngredients($recipe_id){
 
 
                         <label for="instruct">Instructions:</label>
-                        <textarea name="instruct" id="instruct" rows="3" cols="20" required><?php if (isset($instructions)) {
+                        <textarea name="instruct" id="instruct" rows="3" cols="20" required><?php/* if (isset($instructions)) {
                                                                                         echo $instructions;
                                                                                     } elseif (isset($recipeInfo['instructions'])) {
                                                                                         echo $recipeInfo['instructions'];
-                                                                                    } ?></textarea><br />
+                                                                                    } */?></textarea><br />
 
                                                                               
 
