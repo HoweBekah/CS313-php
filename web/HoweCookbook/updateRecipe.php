@@ -10,9 +10,9 @@ if (isset ($_POST['recipeid'])) {
     $stmt1->execute();
     $basicRecipe =$stmt1->fetch(PDO::FETCH_ASSOC);
 $recipeid = $basicRecipe['recipe_id'];
-$recipename = $basicRecipe['recipe_name'];
-$recipeinstruct = $basicRecipe['instructions'];
-$recipecat = $basicRecipe['category'];
+//$recipename = $basicRecipe['recipe_name'];
+//$recipeinstruct = $basicRecipe['instructions'];
+//$recipecat = $basicRecipe['category'];
 
 
 getRecipeInfo($recipeid);
@@ -67,7 +67,7 @@ function updateIngredients($recipe_id){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/main.css" />
     <title><?php if (isset($recipeInfo['name'])) {
-                echo "Modify $recipeInfo[name] ";
+                echo "Modify $recipeInfo[name]";
             } elseif (isset($name)) {
                 echo $name;
             } ?> | Howe Cookbook</title>
