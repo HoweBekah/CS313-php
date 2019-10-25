@@ -28,6 +28,7 @@ $stmt->execute();
 <a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
 </header>
 <main>
+    <form method="POST" action="updateRecipe.php" > 
    <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
    <h2>Ingredients:</h2>
    <ul id="ingred">
@@ -43,8 +44,9 @@ $stmt->execute();
 <p id="instruct">
     <?php echo $recipeInfo['instructions']; ?>
 </p>
-<input class="addUpdate" type="button" value="Update Recipe">
-
+<input class="addUpdate" type="submit" value="Update Recipe">
+<input type='hidden' name='recipeid' value= <?php $recipeInfo['recipe_id']?>>
+   </form>
     </main>
     <footer><h4>
             &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
