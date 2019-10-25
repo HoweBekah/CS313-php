@@ -4,8 +4,8 @@ $db = connect_db();
 
 session_start();
 
-if (isset ($_POST['recipeid'])) {
-    $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_POST['recipeid'] . "'";
+if (isset ($_GET['recipeid'])) {
+    $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_GET['recipeid'] . "'";
     $stmt1 = $db->prepare($sql1);
     $stmt1->execute();
     $basicRecipe =$stmt1->fetch(PDO::FETCH_ASSOC);
