@@ -412,3 +412,14 @@ WHERE ingredient_id = 52;
 
 
 ALTER TABLE recipes DROP COLUMN ingredients;
+
+CREATE TABLE userData
+(
+  userId SERIAL PRIMARY KEY NOT NULL
+,
+  userName TEXT NOT NULL
+,
+  userPassword TEXT NOT NULL
+,
+  userLevel INT NOT NULL
+);
