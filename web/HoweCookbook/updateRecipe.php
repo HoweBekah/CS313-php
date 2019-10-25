@@ -4,7 +4,6 @@ $db = connect_db();
 
 session_start();
 
-if (isset ($_GET['recipeid'])) {
     $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_GET['recipeid'] . "'";
     $stmt1 = $db->prepare($sql1);
     $stmt1->execute();
@@ -57,7 +56,7 @@ function updateIngredients($recipe_id){
    . $stmt->closeCursor(). ';'
     .'END LOOP;';
     return $ingLoop;
-}*/}
+}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
