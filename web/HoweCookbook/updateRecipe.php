@@ -16,8 +16,8 @@ $recipecat = $basicRecipe['category'];
 
 
 getRecipeInfo($recipeid);
-updateRecipe($recipeid, $recipename, $recipeinstruct, $recipecat);
-updateIngredients($recipeid);
+//updateRecipe($recipeid, $recipename, $recipeinstruct, $recipecat);
+//updateIngredients($recipeid);
 function getRecipeInfo($recipe_id)
 {
     $sql = 'SELECT * FROM recipes WHERE recipe_id = :recipe_id';
@@ -28,7 +28,7 @@ function getRecipeInfo($recipe_id)
     $stmt->closeCursor();
     return $recipeInfo;
 }
-function updateRecipe($recipe_id, $recipe_name, $instructions, $category)
+/*function updateRecipe($recipe_id, $recipe_name, $instructions, $category)
 {
     $sql = 'UPDATE recipes SET recipe_name = :recipe_name, instructions = :instructions, category = :category WHERE recipe_id = :recipe_id';
     $stmt = $db->prepare($sql);
@@ -57,7 +57,7 @@ function updateIngredients($recipe_id){
    . $stmt->closeCursor(). ';'
     .'END LOOP;';
     return $ingLoop;
-}}
+}*/}
 ?>
 <!DOCTYPE html>
 <html lang="en">
