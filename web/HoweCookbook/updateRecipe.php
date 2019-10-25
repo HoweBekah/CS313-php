@@ -4,7 +4,7 @@ $db = connect_db();
 
 session_start();
 
-    $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_GET['recipeid'] . "'";
+  /*  $sql1 = 'SELECT * FROM recipes WHERE recipe_id = '. $_GET['recipeid'] . "'";
     $stmt1 = $db->prepare($sql1);
     $stmt1->execute();
     $basicRecipe =$stmt1->fetch(PDO::FETCH_ASSOC);
@@ -18,7 +18,7 @@ getRecipeInfo($recipeid);
 //updateRecipe($recipeid, $recipename, $recipeinstruct, $recipecat);
 //updateIngredients($recipeid);
 function getRecipeInfo($recipe_id)
-{
+{*/
     $sql = 'SELECT * FROM recipes WHERE recipe_id = :recipe_id';
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':recipe_id', $recipe_id, PDO::PARAM_INT);
@@ -26,7 +26,7 @@ function getRecipeInfo($recipe_id)
     $prodInfo = $stmt->fetch(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
     return $recipeInfo;
-}
+//}
 /*function updateRecipe($recipe_id, $recipe_name, $instructions, $category)
 {
     $sql = 'UPDATE recipes SET recipe_name = :recipe_name, instructions = :instructions, category = :category WHERE recipe_id = :recipe_id';
@@ -65,9 +65,9 @@ function updateIngredients($recipe_id){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/main.css" />
-    <title><?php if (isset($recipeInfo['name'])) {
-                echo "Modify $recipeInfo[name]";
-            } elseif (isset($name)) {
+    <title><?php if (isset($recipeInfo['recipe_name'])) {
+                echo "Modify $recipeInfo[recipe_name]";
+            } elseif (isset($recipen_ame)) {
                 echo $name;
             } ?> | Howe Cookbook</title>
 </head>
@@ -86,7 +86,7 @@ function updateIngredients($recipe_id){
    <form id="prodform" method="post" action="recipeDetails.php">
             <fieldset>
                 <legend><?php if (isset($recipeInfo['recipe_name'])) {
-                            echo "Modify $prodInfo[recipe_name] ";
+                            echo "Modify $recipeInfo[recipe_name] ";
                         } elseif (isset($recipe_name)) {
                             echo $recipe_name;
                         } ?></legend>
@@ -115,14 +115,14 @@ function updateIngredients($recipe_id){
                             }?>
 
 
-                        <label for="instruct">Instructions:</label>
-                        <textarea name="instruct" id="instruct" rows="3" cols="20" required><?php if (isset($instructions)) {
+                        <!--<label for="instruct">Instructions:</label>
+                        <textarea name="instruct" id="instruct" rows="3" cols="20" required><?php/* if (isset($instructions)) {
                                                                                         echo $instructions;
                                                                                     } elseif (isset($recipeInfo['instructions'])) {
                                                                                         echo $recipeInfo['instructions'];
-                                                                                    } ?></textarea><br />
+                                                                                    } */?></textarea><br />
 
-                       
+                                                                                -->
 
                 <input type="submit" name="submit" id="submit" value="Update Recipe" />
                 <input type="hidden" name="action" value="updateProd">
