@@ -1,6 +1,6 @@
-<?php  
+<?php
 try {
-        
+
     $dbUrl = getenv('DATABASE_URL');
     // Get the various parts of the DB Connection from the URL
     $dbopts = parse_url($dbUrl);
@@ -8,13 +8,12 @@ try {
     $dbPort = $dbopts["port"];
     $dbUser = $dbopts["user"];
     $dbPassword = $dbopts["pass"];
-    $dbName = ltrim($dbopts["path"],'/');
+    $dbName = ltrim($dbopts["path"], '/');
     // Create the PDO connection
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
     // this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
-    $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-}
-catch (PDOException $ex) {
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $ex) {
     // If this were in production, you would not want to echo
     // the details of the exception.
     echo 'Error!: ' . $ex->getMessage();
@@ -23,11 +22,12 @@ catch (PDOException $ex) {
 session_start();
 /*$query = 'SELECT category FROM category WHERE catid ='. $_GET['id'];
 $stmt = $db->prepare($query);
-$stmt->execute(); 
- $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);*/
+$stmt->execute();
+$categoryName = $stmt->fetch(PDO::FETCH_ASSOC);*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,25 +38,39 @@ $stmt->execute();
 
 <body>
     <div id="content">
-<header>
-<img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
-<a href="index.php"><h1 id="howeHeader">Howe Family Cookbook</h1></a>
-</header>
-    <h1 id="pageTitle">Russian Tea</h1>
+        <header>
+            <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
+            <a href="index.php">
+                <h1 id="howeHeader">Howe Family Cookbook</h1>
+            </a>
+        </header>
+        <h1 id="pageTitle">Russian Tea</h1>
 
-    <ol id="recipesOL">
+        <!-- <ol id="recipesOL">
     <?php
-    $query = 'SELECT ingredients FROM recipes2 WHERE catid = 2';
-    $stmt = $db->prepare($query);
-    $stmt->execute(); 
-     $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
-    ?>
+$query = 'SELECT ingredients FROM recipes2 WHERE catid = 2';
+$stmt = $db->prepare($query);
+$stmt->execute();
+$categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
     </ol>
     <input class="addUpdate" type="button" value="Add Recipe">
-    </div>
-  
-    <footer><h4>
-            &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
-    </h4></footer>
+    </div>-->
+        <?php
+
+// Show all information, defaults to INFO_ALL
+phpinfo();
+
+// Show just the module information.
+// phpinfo(8) yields identical results.
+phpinfo(INFO_MODULES);
+
+?>
+        <footer>
+            <h4>
+                &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
+            </h4>
+        </footer>
 </body>
+
 </html>

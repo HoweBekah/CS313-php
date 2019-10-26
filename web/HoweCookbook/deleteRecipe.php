@@ -42,7 +42,7 @@ function deleteRec()
                 <h2>Ingredients:</h2>
                 <ul id="ingred">
                     <?php
-foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $_GET['recipeid']) as $row) {
+foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recipeInfo['recipe_id']) as $row) {
 
     echo "<li>" . $row['ingredient'] . "</li>";}
 /*echo $recipeInfo['ingredients']; */
@@ -53,8 +53,8 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $_GET[
                 <p id="instruct">
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
-                <!-- <input class="addUpdate" type="submit" value="Delete Recipe" onclick="deleteRec()">
-                <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>-->
+                <input class="addUpdate" type="submit" value="Delete Recipe" onclick="deleteRec()">
+                <!-- <input type='hidden' name='recipeid' value=<?php //$recipeInfo['recipe_id']?> >-->
             </form>
         </main>
         <footer>
