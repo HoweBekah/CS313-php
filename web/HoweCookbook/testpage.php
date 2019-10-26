@@ -48,22 +48,17 @@ $categoryName = $stmt->fetch(PDO::FETCH_ASSOC);*/
 
         <!-- <ol id="recipesOL">
     <?php
-$query = 'SELECT ingredients FROM recipes2 WHERE catid = 2';
+/*$query = 'SELECT ingredients FROM recipes2 WHERE catid = 2';
 $stmt = $db->prepare($query);
 $stmt->execute();
-$categoryName = $stmt->fetch(PDO::FETCH_ASSOC);
+$categoryName = $stmt->fetch(PDO::FETCH_ASSOC);*/
 ?>
     </ol>
     <input class="addUpdate" type="button" value="Add Recipe">
     </div>-->
         <?php
 
-// Show all information, defaults to INFO_ALL
-phpinfo();
-
-// Show just the module information.
-// phpinfo(8) yields identical results.
-phpinfo(INFO_MODULES);
+phpinfo(INFO_GENERAL);
 
 ?>
         <footer>
