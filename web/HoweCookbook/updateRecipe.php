@@ -49,7 +49,7 @@ return $ingLoop;
     <link rel="stylesheet" href="CSS/main.css" />
     <title><?php if (isset($recipeInfo['recipe_name'])) {
     echo "Modify $recipeInfo[recipe_name]";
-} elseif (isset($recipen_ame)) {
+} elseif (isset($recipe_name)) {
     echo $name;
 }?> | Howe Cookbook</title>
 </head>
@@ -117,7 +117,11 @@ echo $recipeInfo['instructions'];
                 </fieldset>
             </form>
         </main>
-        <footer></footer>
+        <footer>
+            <h4>
+                &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
+            </h4>
+        </footer>
     </div>
 </body>
 
