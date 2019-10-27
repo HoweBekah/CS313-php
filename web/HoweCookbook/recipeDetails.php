@@ -50,10 +50,11 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recip
                 </p>
                 <input class="addUpdate" type="submit" value="Update Recipe">
 
-                <input type='hidden' name='recipe_id' value=<?php echo $recipeInfo['recipe_id'] ?>>
+                <input type='hidden' name='recipe_id' value=<?php $recipeInfo['recipe_id']?>>
             </form>
-            <input class="addUpdate" type="submit" value="Delete Recipe" formaction="deleteRecipe.php?" .
-                <?php echo $recipeInfo['recipe_id'] ?>>
+            <form method="POST" action="deleteRecipe.php?" . <?php echo $recipeInfo['recipe_id'] ?>>
+                <input class="addUpdate" type="submit" value="Delete Recipe">
+            </form>
         </main>
         <footer>
             <h4>
