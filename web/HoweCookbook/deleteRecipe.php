@@ -17,7 +17,7 @@ function delRow()
     $stmt1 = $db->prepare($query1);
     $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
     $stmt1->execute();
-    include "categoryRecipes.php";
+    return $stmt1;
 }
 
 ?>
