@@ -12,7 +12,7 @@ $recipeid = $recipeInfo['recipe_id'];
 if (isset($_GET['delRecipe'])) {
 
     delRow($recipeInfo['recipe_id']);
-
+    echo "just freakin work";
 }
 
 function delRow($recipeid)
@@ -22,6 +22,8 @@ function delRow($recipeid)
     $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
     $stmt1->execute();
     header('categoryRecipes.php');
+    echo "just freakin work part 2";
+
 }
 
 ?>
