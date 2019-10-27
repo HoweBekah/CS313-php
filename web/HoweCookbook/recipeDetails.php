@@ -54,6 +54,7 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recip
             </form>
             <form method="POST" action="deleteRecipe.php?recipe_id=" <?php echo $recipeInfo['recipe_id'] ?>>
                 <input class="addUpdate" type="submit" value="Delete Recipe">
+                <input type='hidden' name='recipe_id' value=<?php $recipeInfo['recipe_id']?>>
             </form>
         </main>
         <footer>
