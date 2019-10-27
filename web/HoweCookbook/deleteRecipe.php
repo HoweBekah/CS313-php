@@ -32,7 +32,7 @@ $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
         <main>
             <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
             <form method="POST">
-                <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
+                <h2 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h2>
                 <h2>Ingredients:</h2>
                 <ul id="ingred">
                     <?php
@@ -48,16 +48,16 @@ echo $recipeInfo['ingredients'];
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
                 <input class="addUpdate" type="submit" value="Delete Recipe" name="DelMan">
-                <!-- <input type='hidden' name='recipeid' value=<?php //$recipeInfo['recipe_id']?> >-->
+                <input type='hidden' name='recipeid' value=<?php //$recipeInfo['recipe_id']?>>
             </form>
             <?php
-/*if (isset($_POST["DelMan"])) {
-$query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
-$stmt1 = $db->prepare($query1);
-$stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
-$stmt1->execute();
-include "categoryRecipes.php";
-}*/
+if (isset($_POST["DelMan"])) {
+    $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
+    $stmt1 = $db->prepare($query1);
+    $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
+    $stmt1->execute();
+    include "categoryRecipes.php";
+}
 ?>
         </main>
         <footer>
