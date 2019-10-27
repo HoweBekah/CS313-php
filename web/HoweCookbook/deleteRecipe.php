@@ -9,12 +9,6 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-function deleteRec()
-{$query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
-    $stmt1 = $db->prepare($query1);
-    $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
-    $stmt1->execute();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
