@@ -3,7 +3,7 @@ require "connectDB.php";
 $db = connect_db();
 session_start();
 
-$query = 'SELECT * FROM recipes WHERE recipe_id = 11';
+$query = 'SELECT * FROM recipes WHERE recipe_id =' . $_GET['recipeid'];
 $stmt = $db->prepare($query);
 $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -30,7 +30,7 @@ $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
             </a>
         </header>
         <main>
-            <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
+            <h1 id="pageTitle">Delete <?php //echo $recipeInfo['recipe_name']; ?></h1>
             <form method="POST">
                 <h1 id="pageTitle"><?php //echo $recipeInfo['recipe_name']; ?></h1>
                 <h2>Ingredients:</h2>
