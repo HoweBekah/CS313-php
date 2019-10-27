@@ -9,10 +9,14 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-$query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
-$stmt1 = $db->prepare($query1);
-$stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
-$stmt1->execute();
+function delRow($recipeid)
+{
+    $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
+    $stmt1 = $db->prepare($query1);
+    $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
+    $stmt1->execute();
+    header('categoryRecipes.php');
+}
 
 ?>
 <!DOCTYPE html>
