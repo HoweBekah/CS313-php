@@ -52,9 +52,9 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recip
 
                 <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>
             </form>
-            <form method="POST" action="deleteRecipe.php?recipe_id=" <?php echo $recipeInfo['recipe_id'] ?>>
+            <form method="POST" action="deleteRecipe.php?recipeid=" <?php echo $recipeInfo['recipe_id'] ?>>
                 <input class="addUpdate" type="submit" value="Delete Recipe">
-                <input type='hidden' name='recipe_id' value=<?php $recipeInfo['recipe_id']?>>
+                <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>
             </form>
         </main>
         <footer>
