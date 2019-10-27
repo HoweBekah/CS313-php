@@ -32,16 +32,14 @@ $recipeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);*/
             </a>
         </header>
         <main>
-            <form method="POST" action="updateRecipe.php?recipe_id=<?php echo $recipeInfo['recipe_id'] ?>">
+            <form method="POST" action="updateRecipe.php?recipeid=<?php echo $recipeInfo['recipe_id'] ?>">
                 <h1 id="pageTitle"><?php echo $recipeInfo['recipe_name']; ?></h1>
                 <h2>Ingredients:</h2>
                 <ul id="ingred">
                     <?php
 foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recipeInfo['recipe_id']) as $row) {
 
-    echo "<li>" . $row['ingredient'] . "</li>";}
-/*echo $recipeInfo['ingredients']; */
-?>
+    echo "<li>" . $row['ingredient'] . "</li>";}?>
                 </ul>
 
                 <h2>Instructions:</h2>
@@ -50,7 +48,7 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recip
                 </p>
                 <input class="addUpdate" type="submit" value="Update Recipe">
 
-                <input type='hidden' name='recipe_id' value=<?php $recipeInfo['recipe_id']?>>
+                <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>
             </form>
             <form method="POST" action="deleteRecipe.php?recipeid=<?php echo $recipeInfo['recipe_id'] ?>">
                 <input class="addUpdate" type="submit" value="Delete Recipe">

@@ -4,7 +4,7 @@ $db = connect_db();
 
 session_start();
 
-$sql1 = 'SELECT * FROM recipes WHERE recipe_id = ' . $_GET['recipe_id'] . "'";
+$sql1 = 'SELECT * FROM recipes WHERE recipe_id = ' . $_GET['recipeid'] . "'";
 $stmt1 = $db->prepare($sql1);
 $stmt1->execute();
 $recipeInfo = $stmt1->fetch(PDO::FETCH_ASSOC);

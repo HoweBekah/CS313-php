@@ -32,7 +32,7 @@ $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
         <main>
             <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
             <form method="POST">
-                <h2><?php echo $recipeInfo['recipe_name']; ?></h2>
+                <h1><?php echo $recipeInfo['recipe_name']; ?></h1>
                 <h2>Ingredients:</h2>
                 <ul id="ingred">
                     <?php
