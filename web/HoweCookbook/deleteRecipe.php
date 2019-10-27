@@ -9,7 +9,7 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-function delRow()
+function delRow($recipeid)
 {
     $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
     $stmt1 = $db->prepare($query1);
@@ -55,7 +55,8 @@ echo $recipeInfo['ingredients'];
                 <p id="instruct">
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
-                <input class="addUpdate" type="submit" value="Delete Recipe" onclick=" return delRow();">
+                <input class="addUpdate" type="submit" value="Delete Recipe"
+                    onclick=" return delRow(<?php echo $recipeInfo['recipe_id']; ?>);">
                 <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>
             </form>
 
