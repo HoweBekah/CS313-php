@@ -43,10 +43,3 @@ VALUES
     ('Charity');
 
 
-FOR ingredient IN
-SELECT ingredient
-FROM ingredients
-WHERE recipe = $recipe_id
-LOOP 
-   RAISE NOTICE '%', rec.title;
-END LOOP;
