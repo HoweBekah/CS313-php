@@ -3,7 +3,7 @@ require "connectDB.php";
 $db = connect_db();
 session_start();
 
-$query = 'SELECT * FROM recipes WHERE recipe_id =' . $_GET['recipeid'];
+$query = 'SELECT * FROM recipes WHERE recipe_id = 11';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
