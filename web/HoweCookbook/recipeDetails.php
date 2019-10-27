@@ -49,7 +49,7 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recip
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
                 <input class="addUpdate" type="submit" value="Update Recipe">
-                <input class="addUpdate" type="submit" value="Delete Recipe">
+                <input class="addUpdate" type="submit" value="Delete Recipe" formaction="deleteRecipe.php">
                 <input type='hidden' name='recipe_id' value=<?php $recipeInfo['recipe_id']?>>
             </form>
         </main>
