@@ -9,6 +9,12 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
+if (isset($_GET['delRecipe'])) {
+
+    delRow($recipeInfo['recipe_id']);
+
+}
+
 function delRow($recipeid)
 {
     $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';

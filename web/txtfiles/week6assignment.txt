@@ -1,23 +1,23 @@
 After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application:
-
+https://calm-savannah-95519.herokuapp.com/HoweCookbook/index.php
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+https://github.com/HoweBekah/CS313-php/tree/master/web/HoweCookbook
 
 3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
-
+All of the new functions we were supposed to add this week aren't working yet... I've worked on this for many hours this week with lots of troubleshooting, but I haven't found the solutions to my issues yet. 
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+Updating, inserting, and deleting recipes.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+None of the new things work yet but I think once I get the updating working then that will be the coolest part of this week's assignment.
 6. What is a benefit of having a foreign key constraint?
+It means you don't have to write as much code and that is always a benefit. Connecting tables in that way creates a link that fills columns when pne table is filled with populated with data.
 
-
-7. Please select the category you feel best describes your assignment:
+7. Please select the category you feel best describes your assignment:2
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -26,4 +26,5 @@ After completing the assignment, please answer the questions in this text file a
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I did alot of work but my page still doesn't do the actions it was supposed to this week. I think I'm between a 2-3 but I tried hard. 
 
