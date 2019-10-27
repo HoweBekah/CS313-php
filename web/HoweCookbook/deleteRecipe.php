@@ -1,5 +1,5 @@
 <?php
-require "connectDB.php";
+/*require "connectDB.php";
 $db = connect_db();
 session_start();
 
@@ -7,7 +7,7 @@ $query = 'SELECT * FROM recipes WHERE recipe_id =' . $_GET['recipe_id'];
 $stmt = $db->prepare($query);
 $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
-//$recipeid = $recipeInfo['recipe_id'];
+//$recipeid = $recipeInfo['recipe_id'];*/
 
 ?>
 <!DOCTYPE html>
