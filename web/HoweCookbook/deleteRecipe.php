@@ -67,7 +67,7 @@ echo $recipeInfo['ingredients'];
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
                 <input class="addUpdate" type="submit" value="Delete Recipe" name='delRecipe'>
-                <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>
+                <!--<input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>>-->
             </form>
 
         </main>
