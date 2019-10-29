@@ -8,12 +8,12 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
+if ($_GET) {
+    if (isset($_GET['Delete Recipe'])) {
 
-if (isset($_GET['delRecipe'])) {
-
-    delRow($recipeInfo['recipe_id']);
-    echo "just freakin work";
-}
+        delRow($recipeInfo['recipe_id']);
+        echo "just freakin work";
+    }}
 
 function delRow($recipeid)
 {
