@@ -35,11 +35,7 @@ session_start();
                         <div id="leftfield">
 
                             <label for="recAdd">Recipe Name:</label>
-                            <input type="text" name="addrecipe" id="recAdd" <?php if (isset($recipe_name)) {
-    echo "value='$recipe_name'";
-} elseif (isset($recipeInfo['recipe_name'])) {
-    echo "value='$recipeInfo[recipe_name]'";
-}?> required /><br />
+                            <input type="text" name="addrecipe" id="recAdd" required /><br />
                             <label>Category:</label>
                             <select><?php
 '<option selected>' . $recipeInfo['category'] . '</option>';
