@@ -11,12 +11,13 @@ $recipeid = $recipeInfo['recipe_id'];
 if ($_GET) {
     if (isset($_GET['Delete Recipe'])) {
 
-        delRow($recipeInfo['recipe_id']);
+        delRow();
         echo "just freakin work";
     }}
 
-function delRow($recipeid)
+function delRow()
 {
+    $recipeid = $recipeInfo['recipe_id'];
     $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
     $stmt1 = $db->prepare($query1);
     $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
