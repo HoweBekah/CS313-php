@@ -22,7 +22,7 @@ function delRow()
     $stmt1 = $db->prepare($query1);
     $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
     $stmt1->execute();
-    header('categoryRecipes.php');
+    header('Location: categoryRecipes.php');
     echo "just freakin work part 2";
 
 }
