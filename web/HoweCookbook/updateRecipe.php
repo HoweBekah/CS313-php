@@ -15,15 +15,6 @@ $recipecat = $recipeInfo["category"];
 
 //updateIngredients($recipeid);
 
-$sql2 = 'UPDATE recipes SET recipe_name = :recipe_name, instructions = :instructions, category = :category WHERE recipe_id = :recipe_id';
-$stmt2 = $db->prepare($sql2);
-$stmt2->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
-$stmt2->bindValue(':recipe_name', $recipename, PDO::PARAM_STR);
-$stmt2->bindValue(':instructions', $recipeinstruct, PDO::PARAM_STR);
-$stmt2->bindValue(':category', $recipecat, PDO::PARAM_STR);
-
-$stmt2->execute();
-
 /*function updateIngredients($recipe_id)
 {
 
