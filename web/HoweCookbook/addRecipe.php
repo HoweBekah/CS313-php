@@ -3,9 +3,9 @@ require "connectDB.php";
 $db = connect_db();
 session_start();
 
-$recipename = filter_input(INPUT_POST, 'addrecipe', FILTER_SANITIZE_STRING);
-$recipeinstruct = filter_input(INPUT_POST, 'instruct', FILTER_SANITIZE_STRING);
-$recipecat = filter_input(INPUT_POST, 'catAdd', FILTER_SANITIZE_STRING);
+$recipename = $_POST['addrecipe'];
+$recipeinstruct = $_POST['instruct'];
+$recipecat = $_POST['catAdd'];
 
 $sql2 = 'INSERT INTO recipes (recipe_name, instructions, category) VALUES(:recipe_name, :instructions, :category);';
 $stmt2 = $db->prepare($sql2);
