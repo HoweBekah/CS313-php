@@ -9,7 +9,7 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-if ($_POST['recipeId']) {
+if ($_GET['recipeId']) {
     delRecipe();
 }
 function delRecipe()
@@ -63,7 +63,7 @@ echo $recipeInfo['ingredients'];
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
                 <input class="addUpdate" type="submit" value="Delete Recipe" name='delRecipe'>
-                <input type='hidden' name='recipeId' <?php echo "value= " . $recipeInfo['recipe_id'] ?>>
+                <!--<input type='hidden' name='recipeId' <?php /*echo "value= " . $recipeInfo['recipe_id'] */?>>-->
             </form>
 
         </main>
