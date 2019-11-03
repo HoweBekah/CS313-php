@@ -10,7 +10,7 @@ $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 if ($_GET) {
     echo "I hate everything";
-    if (isset($_POST["delRecipe"])) {
+    if (isset($_GET["delRecipe"])) {
 
         delRecipe();
         echo "just freakin work";
