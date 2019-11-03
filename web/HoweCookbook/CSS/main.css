@@ -162,17 +162,20 @@ footer {
   grid-template-rows: 1fr 1fr 1fr 2fr;
   row-gap: 0.5em;
   margin: auto;
-  text-align: right;
 }
 .nameGrid {
   grid-row: 1;
+  text-align: right;
 }
 .catGrid {
   grid-row: 2;
+  text-align: right;
 }
 .ingGrid {
   grid-row: 3;
+  text-align: right;
 }
 .instGrid {
   grid-row: 4;
+  text-align: right;
 }
