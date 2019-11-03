@@ -60,13 +60,13 @@ echo $recipeInfo['ingredients'];
                 <input type='hidden' name='recipeId' <?php echo "value= " . $recipeInfo['recipe_id'] ?>>
             </form>
             <?
-$recid = $_POST['recipeId'];
+$recid = $_GET['recipeId'];
 $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
 $stmt1 = $db->prepare($query1);
 $stmt1->bindValue(':recipe_id', $recid, PDO::PARAM_INT);
 $stmt1->execute();
 header('Location: categoryRecipes.php');
-die();?>
+die()?>
         </main>
 
         <footer>
