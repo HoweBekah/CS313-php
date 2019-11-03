@@ -8,9 +8,9 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
-if ($_GET) {
+if ($_POST) {
     echo "I hate everything";
-    if (isset($_GET['Delete Recipe'])) {
+    if (isset($_POST['delRecipe'])) {
 
         delRecipe();
         echo "just freakin work";
