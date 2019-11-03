@@ -16,9 +16,7 @@ session_start();
     <script type="text/javascript">
     function addIng() {
         var div = document.getElementById('div_ingred');
-        div.innerHTML += "<input type='text' name='new_ingredients[]' />";
-        div.innerHTML += "\n<br />";
-        div.innerHTML += "<input type='button' value='Add Ingredient' onClick='addIng()'/>";
+        div.innerHTML += "<input class='ingGrid' type='text' name='new_ingredients[]' />";
         div.innerHTML += "\n<br />";
     }
     </script>
@@ -51,7 +49,8 @@ foreach ($db->query('SELECT * FROM category') as $row) {
                     <label class="ingGrid" for="ingred">Ingredients:</label>
 
                     <!--<input type='text' name='ingred'  />-->
-                    <div id="div_ingred">
+                    <div id="div_ingred" class="ingGrid">
+                        <input class='ingGrid' type='text' name='new_ingredients[]' />
                         <input type='button' class="ingGrid" value='Add Ingredient' onClick=addIng() />
                     </div>
 
