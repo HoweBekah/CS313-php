@@ -158,5 +158,6 @@ footer {
 }
 #recipeform {
   display: block;
-  width: 40%;
+  width: 30%;
+  margin: auto;
 }
