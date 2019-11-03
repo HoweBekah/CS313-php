@@ -35,7 +35,7 @@ $recipeid = $recipeInfo['recipe_id'];
 
             <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
 
-            <form method="POST" action="deleteRecipe.php">
+            <form method="POST">
 
                 <h1><?php echo $recipeInfo['recipe_name']; ?></h1>
 
@@ -59,13 +59,15 @@ echo $recipeInfo['ingredients'];
                 <input class="addUpdate" type="submit" value="Delete Recipe" name='delRecipe'>
                 <input type='hidden' name='recipeId' <?php echo "value= " . $recipeInfo['recipe_id'] ?>>
             </form>
-            <?echo "just freakin work part 2";
-$query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
+            <?
+$recid = $_POST['recipeId'];
+echo "just freakin work part 2";
+$query1 = 'DELETE * FROM recipes WHERE recipe_id =:recipeid';
 $stmt1 = $db->prepare($query1);
-$stmt1->bindValue(':recipe_id', $_POST['recipeId'], PDO::PARAM_INT);
+$stmt1->bindValue(':recipe_id', $recid, PDO::PARAM_INT);
 $stmt1->execute();
 header('Location: categoryRecipes.php');
-die(); ?>
+die();?>
         </main>
 
         <footer>
