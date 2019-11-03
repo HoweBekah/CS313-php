@@ -37,18 +37,24 @@ function delRecipe()
 
 <body>
     <div id="content">
+
         <header>
             <img src="images/bannerpicforcookbook.png" alt="10 kids of the howe family." id="bannerPic">
             <a href="index.php">
                 <h1 id="howeHeader">Howe Family Cookbook</h1>
             </a>
         </header>
+
         <main>
+
             <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
 
             <form method="POST" action="deleteRecipe.php">
+
                 <h1><?php echo $recipeInfo['recipe_name']; ?></h1>
+
                 <h2>Ingredients:</h2>
+
                 <ul id="ingred">
                     <?php
 foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe =' . $recipeInfo['recipe_id']) as $row) {
@@ -59,19 +65,25 @@ echo $recipeInfo['ingredients'];
                 </ul>
 
                 <h2>Instructions:</h2>
+
                 <p id="instruct">
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
+
                 <input class="addUpdate" type="submit" value="Delete Recipe" name='delRecipe'>
                 <!--<input type='hidden' name='recipeId' <?php /*echo "value= " . $recipeInfo['recipe_id'] */?>>-->
             </form>
 
         </main>
+
         <footer>
+
             <h4>
                 &copy;2019 | Howe Family Cookbook | Created by Bekah Howe
             </h4>
+
         </footer>
+
     </div>
 </body>
 

@@ -26,11 +26,7 @@ session_start();
             <h1 id="pageTitle">Add New Recipe</h1>
             <form id="prodform" method="post" action="categoryRecipes.php">
                 <fieldset>
-                    <legend><?php if (isset($recipeInfo['recipe_name'])) {
-    echo "Modify $recipeInfo[recipe_name] ";
-} elseif (isset($recipe_name)) {
-    echo $recipe_name;
-}?></legend>
+
                     <div id="inputs">
                         <div id="leftfield">
 
@@ -57,8 +53,8 @@ foreach ($db->query('SELECT ingredient FROM ingredients WHERE recipe = ' . $reci
 
 
 
-                            <input type="submit" name="submit" id="submit" value="Update Recipe" />
-                            <input type="hidden" name="action" value="updateProd">
+                            <input type="submit" name="submit" id="submit" value="Add Recipe" />
+                            <input type="hidden" name="action" value="addRec">
                 </fieldset>
             </form>
         </main>
