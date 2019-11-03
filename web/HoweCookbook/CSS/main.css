@@ -184,6 +184,19 @@ footer {
   padding-right: 0.5em;
 }
 
+.nameGrid input {
+  text-align: left;
+}
+.catGrid input {
+  text-align: left;
+}
+.ingGrid input {
+  text-align: left;
+}
+.instGrid input {
+  text-align: left;
+}
+
 #formcontent textarea {
   margin: 0;
 }
