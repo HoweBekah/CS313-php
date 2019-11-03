@@ -159,7 +159,7 @@ footer {
 #recipeform {
   width: 75%;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
   grid-template-columns: 1fr;
   row-gap: 0.5em;
   margin: auto;
@@ -179,4 +179,9 @@ footer {
 .instGrid {
   grid-row: 4;
   grid-column: 1;
+}
+#recipeform input,
+#recipeform textarea {
+  width: 50%;
+  float: right;
 }
