@@ -156,27 +156,11 @@ footer {
 .addUpdate:hover {
   background-color: #ced3dc;
 }
-#recipeform {
+#formcontent {
   width: 75%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 2fr;
   row-gap: 0.5em;
   margin: auto;
-}
-.nameGrid {
-  grid-row: 1;
-}
-.catGrid {
-  grid-row: 2;
-}
-.ingGrid {
-  grid-row: 3;
-}
-.instGrid {
-  grid-row: 4;
-}
-#recipeform input,
-#recipeform textarea {
-  width: 50%;
-  float: right;
+  text-align: right;
 }
