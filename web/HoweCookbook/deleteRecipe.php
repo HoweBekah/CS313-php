@@ -9,7 +9,7 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-if ($_GET['recipeId']) {
+if ($_POST['recipeId']) {
     delRecipe();
 }
 function delRecipe()
