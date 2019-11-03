@@ -157,7 +157,6 @@ footer {
   background-color: #ced3dc;
 }
 #recipeform {
-  display: block;
-  width: 30%;
-  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
 }
