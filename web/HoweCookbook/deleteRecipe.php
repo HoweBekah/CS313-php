@@ -10,7 +10,7 @@ $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 if ($_GET) {
     echo "I hate everything";
-    if (isset($_GET['delRecipe'])) {
+    if (isset($_GET['Delete Recipe'])) {
 
         delRecipe();
         echo "just freakin work";
@@ -24,6 +24,7 @@ function delRecipe()
     $stmt1->bindValue(':recipe_id', $recipeid, PDO::PARAM_INT);
     $stmt1->execute();
     header('Location: categoryRecipes.php');
+    die();
     echo "just freakin work part 2";
 
 }
