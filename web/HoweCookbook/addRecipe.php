@@ -43,10 +43,10 @@ $stmt2->execute();}*/
 
             <form id="recipeform" method="post" action="categoryRecipes.php">
 
-                <label for="recAdd">Recipe Name:</label>
-                <input type="text" name="addrecipe" id="recAdd" required /><br />
-                <label>Category:</label>
-                <select name="catAdd"><?php
+                <label class="nameGrid" for="recAdd">Recipe Name:</label>
+                <input class="nameGrid" type="text" name="addrecipe" id="recAdd" required /><br />
+                <label class="catGrid">Category:</label>
+                <select class="catGrid" name="catAdd"><?php
 '<option selected disabled>Select One</option>';
 foreach ($db->query('SELECT * FROM category') as $row) {
     echo "<option>" . $row['category'] . "</option>";
@@ -54,19 +54,18 @@ foreach ($db->query('SELECT * FROM category') as $row) {
 
                 </select>
 
-                <label for="ingred">Ingredients:</label>
+                <label class="ingGrid" for="ingred">Ingredients:</label>
 
-                <input type='text' name='ingred' class='updateIng' />
-
-
-
-                <label for="instruct">Instructions:</label>
-                <textarea name="instruct" id="instruct" rows="3" cols="20" required></textarea><br />
+                <input type='text' name='ingred' class="ingGrid" />
 
 
 
-                <input class="addUpdate" type="submit" name="submit" id="submit" value="Add Recipe" />
-                <input type="hidden" name="action" value="addRec">
+                <label class="instGrid" for="instruct">Instructions:</label>
+                <textarea class="instGrid" name="instruct" id="instruct" rows="3" cols="20" required></textarea><br />
+
+
+
+                <input class="subGrid" class="addUpdate" type="submit" name="submit" id="submit" value="Add Recipe" />
 
             </form>
         </main>

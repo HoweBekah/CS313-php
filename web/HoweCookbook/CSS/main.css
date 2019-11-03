@@ -159,4 +159,20 @@ footer {
 #recipeform {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  row-gap: 0.5em;
+}
+.nameGrid {
+  grid-row: 1;
+}
+.catGrid {
+  grid-row: 2;
+}
+.ingGrid {
+  grid-row: 3;
+}
+.instGrid {
+  grid-row: 4;
+}
+.subGrid {
+  grid-row: 5;
 }
