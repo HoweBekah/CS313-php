@@ -157,7 +157,7 @@ footer {
   background-color: #ced3dc;
 }
 #formcontent {
-  width: 75%;
+  width: 60%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 2fr;
   row-gap: 0.5em;
@@ -182,4 +182,8 @@ footer {
   grid-row: 4;
   text-align: right;
   padding-right: 0.5em;
+}
+
+#formcontent textarea {
+  margin: 0;
 }
