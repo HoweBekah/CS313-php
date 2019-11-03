@@ -61,8 +61,7 @@ echo $recipeInfo['ingredients'];
             </form>
             <?
 $recid = $_POST['recipeId'];
-echo "just freakin work part 2";
-$query1 = 'DELETE * FROM recipes WHERE recipe_id =:recipeid';
+$query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
 $stmt1 = $db->prepare($query1);
 $stmt1->bindValue(':recipe_id', $recid, PDO::PARAM_INT);
 $stmt1->execute();
