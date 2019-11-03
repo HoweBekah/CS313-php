@@ -9,7 +9,7 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-if (isset($_POST["delRecipe"])) {
+if (isset($_GET["delRecipe"])) {
 
     delRecipe();
     echo "just freakin work";
@@ -17,6 +17,10 @@ if (isset($_POST["delRecipe"])) {
 
 function delRecipe()
 {
+    $query = 'SELECT * FROM recipes WHERE recipe_id =' . $_GET['recipeid'];
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
     $recipeid = $recipeInfo['recipe_id'];
     $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
     $stmt1 = $db->prepare($query1);
