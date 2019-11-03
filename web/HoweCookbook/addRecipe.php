@@ -40,6 +40,7 @@ $stmt2->execute();}*/
         </header>
         <main>
             <h1 id="pageTitle">Add New Recipe</h1>
+
             <form id="recipeform" method="post" action="categoryRecipes.php">
 
                 <label for="recAdd">Recipe Name:</label>
@@ -64,7 +65,7 @@ foreach ($db->query('SELECT * FROM category') as $row) {
 
 
 
-                <input type="submit" name="submit" id="submit" value="Add Recipe" />
+                <input class="addUpdate" type="submit" name="submit" id="submit" value="Add Recipe" />
                 <input type="hidden" name="action" value="addRec">
 
             </form>

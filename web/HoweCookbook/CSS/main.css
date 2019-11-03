@@ -156,3 +156,6 @@ footer {
 .addUpdate:hover {
   background-color: #ced3dc;
 }
+#recipeform {
+  display: block;
+}
