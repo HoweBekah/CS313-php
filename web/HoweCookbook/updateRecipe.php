@@ -43,6 +43,7 @@ return $ingLoop;
 } elseif (isset($recipe_name)) {
     echo $name;
 }?> | Howe Cookbook</title>
+
 </head>
 
 <body>

@@ -13,6 +13,15 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/main.css" />
     <title> Add Recipe | Howe Cookbook</title>
+    <script type="text/javascript">
+    function addIng() {
+        var div = document.getElementById('div_ingred');
+        div.innerHTML += "<input type='text' name='new_ingredients[]' />";
+        div.innerHTML += "\n<br />";
+        div.innerHTML += "<input type='button' value='Add Ingredient' onClick='addIng()'/>";
+        div.innerHTML += "\n<br />";
+    }
+    </script>
 </head>
 
 <body>
@@ -41,9 +50,10 @@ foreach ($db->query('SELECT * FROM category') as $row) {
 
                     <label class="ingGrid" for="ingred">Ingredients:</label>
 
-                    <input type='text' name='ingred' class="ingGrid" />
-
-
+                    <!--<input type='text' name='ingred'  />-->
+                    <div id="div_ingred">
+                        <input type='button' class="ingGrid" value='Add Ingredient' onClick=addIng() />
+                    </div>
 
                     <label class="instGrid" for="instruct">Instructions:</label>
                     <textarea class="instGrid" name="instruct" id="instruct" rows="3" cols="20"
