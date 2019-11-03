@@ -40,37 +40,33 @@ $stmt2->execute();}*/
         </header>
         <main>
             <h1 id="pageTitle">Add New Recipe</h1>
-            <form id="prodform" method="post" action="categoryRecipes.php">
-                <fieldset>
+            <form id="recipeform" method="post" action="categoryRecipes.php">
 
-                    <div id="inputs">
-                        <div id="leftfield">
-
-                            <label for="recAdd">Recipe Name:</label>
-                            <input type="text" name="addrecipe" id="recAdd" required /><br />
-                            <label>Category:</label>
-                            <select name="catAdd"><?php
+                <label for="recAdd">Recipe Name:</label>
+                <input type="text" name="addrecipe" id="recAdd" required /><br />
+                <label>Category:</label>
+                <select name="catAdd"><?php
 '<option selected disabled>Select One</option>';
 foreach ($db->query('SELECT * FROM category') as $row) {
     echo "<option>" . $row['category'] . "</option>";
 }?>
 
-                            </select>
+                </select>
 
-                            <label for="ingred">Ingredients:</label>
+                <label for="ingred">Ingredients:</label>
 
-                            <input type='text' name='ingred' class='updateIng' />;
-
-
-
-                            <label for="instruct">Instructions:</label>
-                            <textarea name="instruct" id="instruct" rows="3" cols="20" required></textarea><br />
+                <input type='text' name='ingred' class='updateIng' />;
 
 
 
-                            <input type="submit" name="submit" id="submit" value="Add Recipe" />
-                            <input type="hidden" name="action" value="addRec">
-                </fieldset>
+                <label for="instruct">Instructions:</label>
+                <textarea name="instruct" id="instruct" rows="3" cols="20" required></textarea><br />
+
+
+
+                <input type="submit" name="submit" id="submit" value="Add Recipe" />
+                <input type="hidden" name="action" value="addRec">
+
             </form>
         </main>
         <footer>
