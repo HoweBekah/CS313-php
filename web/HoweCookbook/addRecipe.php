@@ -65,7 +65,7 @@ foreach ($db->query('SELECT * FROM category') as $row) {
 
 
 
-                <input class="subGrid" class="addUpdate" type="submit" name="submit" id="submit" value="Add Recipe" />
+                <input class="addUpdate" type="submit" name="submit" id="submit" value="Add Recipe" />
 
             </form>
         </main>
