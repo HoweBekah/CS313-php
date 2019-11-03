@@ -71,9 +71,15 @@ echo $recipeInfo['ingredients'];
                 </p>
 
                 <input class="addUpdate" type="submit" value="Delete Recipe" name='delRecipe'>
-                <!--<input type='hidden' name='recipeId' <?php /*echo "value= " . $recipeInfo['recipe_id'] */?>>-->
+                <input type='hidden' name='recipeId' <?php echo "value= " . $recipeInfo['recipe_id'] ?>>
             </form>
-
+            <?echo "just freakin work part 2";
+$query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
+$stmt1 = $db->prepare($query1);
+$stmt1->bindValue(':recipe_id', $_POST['recipeId'], PDO::PARAM_INT);
+$stmt1->execute();
+header('Location: categoryRecipes.php');
+die(); ?>
         </main>
 
         <footer>
