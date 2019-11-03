@@ -9,20 +9,6 @@ $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
 
-if ($_GET['recipeId']) {
-    delRecipe();
-}
-function delRecipe()
-{
-    echo "just freakin work part 2";
-    $query1 = 'DELETE FROM recipes WHERE recipe_id =:recipeid';
-    $stmt1 = $db->prepare($query1);
-    $stmt1->bindValue(':recipe_id', $_GET['recipeId'], PDO::PARAM_INT);
-    $stmt1->execute();
-    header('Location: categoryRecipes.php');
-    die();
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
