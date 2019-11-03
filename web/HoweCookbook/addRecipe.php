@@ -3,7 +3,7 @@ require "connectDB.php";
 $db = connect_db();
 session_start();
 
-$recipename = filter_input(INPUT_POST, 'addrecipe', FILTER_SANITIZE_STRING);
+/*$recipename = filter_input(INPUT_POST, 'addrecipe', FILTER_SANITIZE_STRING);
 $recipeinstruct = filter_input(INPUT_POST, 'instruct', FILTER_SANITIZE_STRING);
 $recipecat = filter_input(INPUT_POST, 'catAdd', FILTER_SANITIZE_STRING);
 
@@ -11,12 +11,12 @@ addRec($recipename, $recipeinstruct, $recipecat);
 
 function addRec($recipename, $recipeinstruct, $recipecat)
 {
-    $sql2 = 'INSERT INTO recipes (recipe_name, instructions, category) VALUES(:recipe_name, :instructions, :category);';
-    $stmt2 = $db->prepare($sql2);
-    $stmt2->bindValue(':recipe_name', $recipename, PDO::PARAM_STR);
-    $stmt2->bindValue(':instructions', $recipeinstruct, PDO::PARAM_STR);
-    $stmt2->bindValue(':category', $recipecat, PDO::PARAM_STR);
-    $stmt2->execute();}
+$sql2 = 'INSERT INTO recipes (recipe_name, instructions, category) VALUES(:recipe_name, :instructions, :category);';
+$stmt2 = $db->prepare($sql2);
+$stmt2->bindValue(':recipe_name', $recipename, PDO::PARAM_STR);
+$stmt2->bindValue(':instructions', $recipeinstruct, PDO::PARAM_STR);
+$stmt2->bindValue(':category', $recipecat, PDO::PARAM_STR);
+$stmt2->execute();}*/
 
 ?>
 <!DOCTYPE html>
