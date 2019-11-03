@@ -3,9 +3,9 @@ require "connectDB.php";
 $db = connect_db();
 session_start();
 
-$recipename = $_POST['addrecipe'];
-$recipeinstruct = $_POST['instruct'];
-$recipecat = $_POST['catAdd'];
+$recipename = $_GET['addrecipe'];
+$recipeinstruct = $_GET['instruct'];
+$recipecat = $_GET['catAdd'];
 
 $sql2 = 'INSERT INTO recipes (recipe_name, instructions, category) VALUES(:recipe_name, :instructions, :category);';
 $stmt2 = $db->prepare($sql2);
