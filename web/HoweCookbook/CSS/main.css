@@ -160,25 +160,20 @@ footer {
   width: 75%;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 2fr;
-  grid-template-columns: 1fr;
   row-gap: 0.5em;
   margin: auto;
 }
 .nameGrid {
   grid-row: 1;
-  grid-column: 1;
 }
 .catGrid {
   grid-row: 2;
-  grid-column: 1;
 }
 .ingGrid {
   grid-row: 3;
-  grid-column: 1;
 }
 .instGrid {
   grid-row: 4;
-  grid-column: 1;
 }
 #recipeform input,
 #recipeform textarea {
