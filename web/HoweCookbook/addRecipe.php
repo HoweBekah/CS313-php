@@ -56,7 +56,7 @@ foreach ($db->query('SELECT * FROM category') as $row) {
 
                 <label for="ingred">Ingredients:</label>
 
-                <input type='text' name='ingred' class='updateIng' />;
+                <input type='text' name='ingred' class='updateIng' />
 
 
 
