@@ -166,16 +166,20 @@ footer {
 .nameGrid {
   grid-row: 1;
   text-align: right;
+  padding-right: 0.5em;
 }
 .catGrid {
   grid-row: 2;
   text-align: right;
+  padding-right: 0.5em;
 }
 .ingGrid {
   grid-row: 3;
   text-align: right;
+  padding-right: 0.5em;
 }
 .instGrid {
   grid-row: 4;
   text-align: right;
+  padding-right: 0.5em;
 }
