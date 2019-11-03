@@ -164,3 +164,15 @@ footer {
   margin: auto;
   text-align: right;
 }
+.nameGrid {
+  grid-row: 1;
+}
+.catGrid {
+  grid-row: 2;
+}
+.ingGrid {
+  grid-row: 3;
+}
+.instGrid {
+  grid-row: 4;
+}
