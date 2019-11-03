@@ -8,7 +8,7 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $recipeInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 $recipeid = $recipeInfo['recipe_id'];
-if ($_POST) {
+if ($_GET) {
     echo "I hate everything";
     if (isset($_POST['delRecipe'])) {
 
