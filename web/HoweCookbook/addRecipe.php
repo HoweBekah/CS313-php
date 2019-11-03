@@ -3,17 +3,6 @@ require "connectDB.php";
 $db = connect_db();
 session_start();
 
-$recipename = $_GET['addrecipe'];
-$recipeinstruct = $_GET['instruct'];
-$recipecat = $_GET['catAdd'];
-
-$sql2 = 'INSERT INTO recipes (recipe_name, instructions, category) VALUES(:recipe_name, :instructions, :category);';
-$stmt2 = $db->prepare($sql2);
-$stmt2->bindValue(':recipe_name', $recipename, PDO::PARAM_STR);
-$stmt2->bindValue(':instructions', $recipeinstruct, PDO::PARAM_STR);
-$stmt2->bindValue(':category', $recipecat, PDO::PARAM_STR);
-$stmt2->execute();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,6 +52,20 @@ foreach ($db->query('SELECT * FROM category') as $row) {
                 <input class="addUpdate" type="submit" name="submit" id="submit" value="Add Recipe" />
 
             </form>
+            <?php
+
+$recipename = $_POST['addrecipe'];
+$recipeinstruct = $_POST['instruct'];
+$recipecat = $_POST['catAdd'];
+
+$sql2 = 'INSERT INTO recipes (recipe_name, instructions, category) VALUES(:recipe_name, :instructions, :category);';
+$stmt2 = $db->prepare($sql2);
+$stmt2->bindValue(':recipe_name', $recipename, PDO::PARAM_STR);
+$stmt2->bindValue(':instructions', $recipeinstruct, PDO::PARAM_STR);
+$stmt2->bindValue(':category', $recipecat, PDO::PARAM_STR);
+$stmt2->execute();
+
+?>
         </main>
         <footer>
             <h4>
