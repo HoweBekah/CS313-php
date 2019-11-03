@@ -46,7 +46,7 @@ function delRecipe()
         <main>
             <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
 
-            <form method="POST" action="deleteRecipe.php?recipeId=" . <?php echo $recipeInfo['recipe_id']; ?>>
+            <form method="POST" <?php echo "action=deleteRecipe.php?recipeId=" . $recipeInfo['recipe_id']; ?>>
                 <h1><?php echo $recipeInfo['recipe_name']; ?></h1>
                 <h2>Ingredients:</h2>
                 <ul id="ingred">
