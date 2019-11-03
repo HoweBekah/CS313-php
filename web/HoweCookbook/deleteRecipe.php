@@ -45,7 +45,8 @@ function delRecipe()
         </header>
         <main>
             <h1 id="pageTitle">Delete <?php echo $recipeInfo['recipe_name']; ?></h1>
-            <form method="POST" action="deleteRecipe.php">
+
+            <form method="POST" action="deleteRecipe.php?recipeId=" . <?php echo $recipeInfo['recipe_id']; ?>>
                 <h1><?php echo $recipeInfo['recipe_name']; ?></h1>
                 <h2>Ingredients:</h2>
                 <ul id="ingred">
@@ -62,7 +63,7 @@ echo $recipeInfo['ingredients'];
                     <?php echo $recipeInfo['instructions']; ?>
                 </p>
                 <input class="addUpdate" type="submit" value="Delete Recipe" name='delRecipe'>
-                <input type='hidden' name='recipeId' value=<?php $recipeInfo['recipe_id']?>>
+                <input type='hidden' name='recipeId' <?php echo "value= " . $recipeInfo['recipe_id'] ?>>
             </form>
 
         </main>
