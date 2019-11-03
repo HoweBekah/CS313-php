@@ -37,8 +37,8 @@ foreach ($db->query('SELECT * FROM recipes WHERE category = ' . "'" . $categoryN
 ?>
         </ol>
         <form id="addform" method="post" action="addRecipe.php">
-            <input class="addUpdate" type="button" value="Add Recipe">
-            <input type='hidden' name='recipeid' value=<?php $recipeInfo['recipe_id']?>></form>
+            <input class="addUpdate" type="submit" value="Add Recipe">
+        </form>
     </div>
     <?php
 foreach ($db->query('SELECT * FROM ingredients WHERE recipe_id =' . $_GET['recipeid']) as $row) {
