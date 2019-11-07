@@ -11,6 +11,6 @@ console.log(lines);
 // fs.readFileSync(process.argv[2], 'utf8').split('\n').length - 1
 
 //group answer
-/*let data = fs.readFileSync(process.argv[2], "utf8");
+let data = fs.readFileSync(process.argv[2], "utf8");
 data = data.split("\n");
-console.log(data.length - 1);*/
+console.log(data.length - 1);
