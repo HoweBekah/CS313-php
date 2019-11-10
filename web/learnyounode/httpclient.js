@@ -11,7 +11,7 @@ http
 
 //group answer
 //const http = require('http');
-let url = process.argv[2];
+/*let url = process.argv[2];
 
 http.get(url, request => {
   request.setEncoding("utf8");
@@ -21,4 +21,4 @@ http.get(url, request => {
   request.on("error", e => {
     console.log(e);
   });
-});
+});*/
