@@ -3,12 +3,12 @@ After completing the assignment, please answer the questions in this text file a
 0. Don't forget to also upload your javascript file to the assignment dropbox in I-Learn.
 
 1. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+Everything is working, I think.
 2. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+It took me forever to realize that a callback function is just a function inside a function so it was pretty cool when I figured that out. 
 3. Describe anything you did to go above and beyond with this assignment.
-
-4. Please select the category you feel best describes your assignment:
+I did the requirements.
+4. Please select the category you feel best describes your assignment: 4
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
@@ -18,3 +18,4 @@ After completing the assignment, please answer the questions in this text file a
 
 5. Provide a brief justification (1-2 sentences) for selecting that category.
 
+My js does everything that the instructions say but I didn't add any cool things to it.
