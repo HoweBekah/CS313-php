@@ -1,0 +1,31 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://floating-springs-07299.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/HoweBekah/CS313NodeProject
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+All the required functionality works
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+It all works
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+I thought the for loop I created was a pretty smart way of forgoing a huge switch statement.
+
+6. In your own words, briefly describe the concept of a callback function and why it is useful.
+A callback function is basically a function within a function. It's useful because you can call the callback function in as many other function as you want. 
+
+7. Please select the category you feel best describes your assignment: 5
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I feel I went above and beyond because of the time I put into the CSS. It looks much better than it did without the css.
+

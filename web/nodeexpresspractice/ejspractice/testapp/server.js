@@ -10,7 +10,18 @@ app.set("view engine", "ejs");
 
 // index page
 app.get("/", function(req, res) {
-  res.render("pages/index");
+  var drinks = [
+    { name: "Mt Dew", caffinated: 8 },
+    { name: "Sprite", caffinated: 0 },
+    { name: "Dr. Pepper", caffinated: 10 }
+  ];
+  var tagline =
+    "Any code of your own that you haven't looked at for six or more months might as well have been written by someone else.";
+
+  res.render("pages/index", {
+    drinks: drinks,
+    tagline: tagline
+  });
 });
 
 // about page
