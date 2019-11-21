@@ -1,0 +1,26 @@
+{
+  "name": "howecookbook",
+  "version": "1.0.0",
+  "description": "Howe Family Cookbook",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoweBekah/HoweCookbook.git"
+  },
+  "author": "Bekah Howe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoweBekah/HoweCookbook/issues"
+  },
+  "homepage": "https://github.com/HoweBekah/HoweCookbook#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pg": "^7.14.0",
+    "pool": "^0.4.1"
+  }
+}
