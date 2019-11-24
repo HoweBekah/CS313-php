@@ -1,0 +1,27 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Project title / one sentence description:
+Howe Family Cookbook. My family's cookbook, obviously... :)
+
+2. Copy and paste the URL for your site at Heroku:
+https://arcane-coast-74365.herokuapp.com/
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/HoweBekah/HoweCookbook
+
+4. Describe the component that you completed from end-to-end:
+Requesting all info in the recipes table that are beverages and then displaying them on the screen.
+
+5. Please select the category you feel best describes your assignment:4
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+
+6. Provide a brief justification (1-2 sentences) for selecting that category.
+It meets the requirements for this week. There's a little bit of css but really I just successfully called and returned data from the database.
+
+7. Please list any questions you have for the instructor regarding this assignment or this week's topic.
+I most not have studied the reading material enough this week because I had a heck of a time making everything work. It still doesn't look the way i want it to because I can't seem to get the recipe names to render in an unordered list. It's kinf of frustrating.
