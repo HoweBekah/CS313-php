@@ -1,0 +1,32 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Project Title / One sentence description:
+Howe Family Cookbook
+My fam's cookbook
+
+2. Copy and paste the URL for your web application (if applicable):
+https://arcane-coast-74365.herokuapp.com/cookbook.html
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/HoweBekah/thebookofcook
+
+4. Describe the functionality that is currently working, along with any special instructions of how to use your web application:
+You can call the db and get individual recipe lists for the different categories. The dropdown category list is also pulled from the db
+
+5. Describe the features that are not yet working correctly.
+I'm figuring out how to turn the recipe list items into buttons that will call and load the recipe details. I'm close on that, I think. I need to add all the CSS as well.
+
+
+6. Please select the category you feel best describes your assignment:3
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+This is a HUGE improvement from the past couple weeks of working on this. The db calls work and print out correctly. 
+There's just one db call left I need to get working (recipe details) and then all I'll need for my app to be done is CSS.
+
+8. Please list any questions you have for the instructor regarding this assignment or this week's topic.
