@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/HoweBekah/HoweCookbook#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7",
     "pg": "^7.14.0",
     "pool": "^0.4.1"
